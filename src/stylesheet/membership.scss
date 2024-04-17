@@ -1,0 +1,223 @@
+.membership-box {
+  width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+  .head-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .pills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    .btn-pill {
+      cursor: pointer;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: var(--gray);
+      padding: 12px 30px;
+      background-color: #fff;
+      border-radius: 100px;
+      &.active {
+        color: #fff;
+        background-color: var(--dark);
+      }
+    }
+  }
+  .heading {
+    margin-bottom: 40px;
+    .txt1 {
+      font-size: 1.8em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .ticket-input {
+    display: grid;
+    grid-template-columns: 1fr 135px;
+    .ticket-input-box {
+      border-radius: 10px;
+      background-color: #fff;
+      border: 2px solid #4416ce;
+      filter: hue-rotate(360deg);
+      background-image: linear-gradient(#fff, #fff),
+        linear-gradient(to left, #37a9fa, #5951f3);
+      background-clip: content-box, border-box;
+      background-origin: border-box;
+      animation: huerotate 2.5s infinite linear;
+      .group {
+        padding: 40px;
+        .comment {
+          font-size: 1.2em;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        .ticket-input-container {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .ticket-symbol {
+      border-radius: 10px;
+      background-color: #601fc3;
+      background-image: url("/src/assets/images/logo/hi_dodo_logo_rotate.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      &::after {
+        content: "";
+        width: 10px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: -2px;
+        transform: translate(-50%, -50%);
+        background-image: url("/src/assets/images/bg/dot_dot_dot.png");
+        background-size: 10px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    button {
+      max-width: 400px;
+    }
+  }
+  .tabs {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+    .btn-tab {
+      cursor: pointer;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--gray);
+      &.active {
+        border-bottom: 4px solid var(--light-purple);
+        color: var(--light-purple);
+      }
+    }
+  }
+  .purchase-list,
+  .refund-list {
+    display: grid;
+    gap: 10px;
+  }
+  .purchase-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    .col1,
+    .col2 {
+      .label {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .state-box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        &.payment {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          .option {
+            cursor: pointer;
+            width: 100%;
+            height: 70px;
+            border-radius: 10px;
+            border: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            transition: all 0.2s;
+            &.active {
+              background-color: var(--light-purple);
+              color: #fff;
+            }
+          }
+        }
+        &.purchase {
+          padding: 0px;
+          border: 2px solid #4416ce;
+          .purchase-box {
+            padding: 18px;
+          }
+        }
+      }
+      .product {
+        margin-bottom: 40px;
+        .product-name {
+          font-size: 1.2em;
+        }
+      }
+      .purchase-info {
+        .check-group {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding-left: 10px;
+          .right-arrow {
+            cursor: pointer;
+            min-width: 30px;
+            min-height: 30px;
+            background-image: url("/src/assets/images/icons/chevron-right.svg");
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+      .tr {
+        display: flex;
+        justify-content: space-between;
+        .price {
+          font-size: 1.2em;
+        }
+        &.total {
+          color: var(--light-purple);
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          .price {
+            font-size: 1.5em;
+            font-weight: 600;
+          }
+        }
+      }
+      .hr {
+        width: 100%;
+        height: 1px;
+        background-color: #e3e3e3;
+        border-radius: 100px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+#appPrice,
+#subscription {
+  margin-bottom: 80px;
+}
