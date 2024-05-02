@@ -11,16 +11,20 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body>
     <global-nav-bar></global-nav-bar>
 
     <!-- 섹션1 : 메인 베너 -->
     <section class="section-01">
-      <div class="slide">
-        <div class="btn-slide-left"></div>
+      <div class="container">
+        <div class="btn-chev-left"></div>
         <div class="slide-1">
-          <div class="text-group">
+          <div class="text-box">
             <div class="txt-1">
               <span>국내 No.1 에듀테크 영어독서 프로그램</span>
             </div>
@@ -35,7 +39,7 @@
             <div class="character-3"></div>
           </div>
         </div>
-        <div class="btn-slide-right"></div>
+        <div class="btn-chev-right"></div>
       </div>
     </section>
 
@@ -52,8 +56,8 @@
         </div>
       </div>
       <div class="container">
-        <div class="cards">
-          <div class="fade-card">
+        <div class="ani-card-box">
+          <div class="ani-card">
             <div class="row-1">
               <div class="txt-1">데일리 코스 기반</div>
               <div class="txt-2">커리큘럼</div>
@@ -65,7 +69,7 @@
               />
             </div>
           </div>
-          <div class="fade-card">
+          <div class="ani-card">
             <div class="row-1">
               <div class="txt-1">균형잡힌</div>
               <div class="txt-2">학습 설계</div>
@@ -77,7 +81,7 @@
               />
             </div>
           </div>
-          <div class="fade-card">
+          <div class="ani-card">
             <div class="row-1">
               <div class="txt-1">어댑티브</div>
               <div class="txt-2">러닝 시스템</div>
@@ -89,7 +93,7 @@
               />
             </div>
           </div>
-          <div class="fade-card">
+          <div class="ani-card">
             <div class="row-1">
               <div class="txt-1">풍성한</div>
               <div class="txt-2">보상 시스템</div>
@@ -101,7 +105,7 @@
               />
             </div>
           </div>
-          <div class="fade-card">
+          <div class="ani-card">
             <div class="row-1">
               <div class="txt-1">리워드 시스템으로</div>
               <div class="txt-2">펫 육성 기능</div>
@@ -124,13 +128,13 @@
         ><span>만 오세요.</span>
       </div>
       <div class="container">
-        <div class="screenshot-image">
+        <div class="image">
           <img
             src="/src/assets/images/hidodo-main-images/section-03/screenshot_image.png"
             alt=""
           />
         </div>
-        <div class="text-group">
+        <div class="text-box">
           <div class="quote-marks"></div>
           <div class="row-1">
             <div class="txt">좋은 건 알겠는데,</div>
@@ -150,11 +154,11 @@
     <!-- 섹션4 : 지루할 틈이 없어요 -->
     <section class="section-04">
       <div class="heading">
-        <div class="text-group-1">
+        <div class="text-box-1">
           <div class="txt-1"><span>지루할 틈</span>이</div>
           <div class="txt-2">없어요.</div>
         </div>
-        <div class="text-group-2">
+        <div class="text-box-2">
           <div class="txt-1">
             65종 이상 다양한 유형의 학습 액티비티, 재미있는 노래와 챈트를
             포함한<br />
@@ -171,67 +175,105 @@
         </div>
       </div>
       <div class="container">
-        <div class="screen-shot-left">
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+        <!-- 슬라이드 -->
+        <div id="ceterModeSlide">
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity01.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity01_ani.gif"
+              txt="고마의 홈베이킹"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity02.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity02_ani.gif"
+              txt="스카이 다이빙"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity03.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity03_ani.gif"
+              txt="망가진 팝콘 카"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity04.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity04_ani.gif"
+              txt="도도 빌리지 그림대회"
+            ></slide-contents>
           </div>
-        </div>
-        <div class="screen-shot-center">
-          <div class="screen-shot-center-container">
-            <img
-              src="/src/assets/images/hidodo-main-images/section-04/screenshot_1.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity05.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity05_ani.gif"
+              txt="터져라 팝콘"
+            ></slide-contents>
           </div>
-          <div class="direction">
-            <span class="arrow-icon"></span>고마의 홈베이킹
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity06.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity06_ani.gif"
+              txt="아이스크림 가게"
+            ></slide-contents>
           </div>
-        </div>
-        <div class="screen-shot-right">
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity07.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity07_ani.gif"
+              txt="바로는 아래로 아래로"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity08.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity08_ani.gif"
+              txt="연못 건너기"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity09.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity09_ani.gif"
+              txt="역도왕 레오니"
+            ></slide-contents>
           </div>
-          <div class="screen-shot-gray">
-            <img
-              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
-              alt=""
-            />
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity10.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity10_ani.gif"
+              txt="내 자리는 어디"
+            ></slide-contents>
+          </div>
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity11.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity11_ani.gif"
+              txt="벚꽃 길 레이싱"
+            ></slide-contents>
+          </div>
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity12.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity12_ani.gif"
+              txt="빗방울을 받아라"
+            ></slide-contents>
+          </div>
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity13.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity13_ani.gif"
+              txt="왕국의 꽃밭"
+            ></slide-contents>
+          </div>
+          <div>
+            <slide-contents
+              imgSrc1="/src/assets/images/hidodo-main-images/section-04/slide-image/activity14.png"
+              imgSrc2="/src/assets/images/hidodo-main-images/section-04/slide-image/activity14_ani.gif"
+              txt="양치기 그린썸"
+            ></slide-contents>
           </div>
         </div>
       </div>
@@ -241,18 +283,18 @@
     <section class="section-05">
       <div class="heading">스스로 <span>학습하는 습관</span>을 길러요</div>
       <div class="container">
-        <div class="tabs">
-          <div class="tab-item active">
+        <div class="tab-items">
+          <div class="tab-item active" onclick="openTab(event, 'tabContents1')">
             <div class="icon books"></div>
             <div class="txt-1">일일 학습과 반복학습을 통한</div>
             <div class="txt-2">학습 몰입도 향상</div>
           </div>
-          <div class="tab-item">
+          <div class="tab-item" onclick="openTab(event, 'tabContents2')">
             <div class="icon coin"></div>
             <div class="txt-1">동기부여와 학습 성취감을 느끼게 해주는</div>
             <div class="txt-2">리워드 시스템</div>
           </div>
-          <div class="tab-item">
+          <div class="tab-item" onclick="openTab(event, 'tabContents3')">
             <div class="icon paw"></div>
             <div class="txt-1">직접 수집하고 케어하는</div>
             <div class="txt-2">나만의 Pet 키우기</div>
@@ -261,7 +303,33 @@
         <div id="tabContents1" class="tab-contents active">
           <div class="contents">
             <img
-              src="/src/assets/images/hidodo-main-images/section-05/tab_contents_image_3.png"
+              src="/src/assets/images/hidodo-main-images/section-05/contents01.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="txt">
+            강요하지 않아도 <span class="highlight">스스로 학습하는 힘</span> 을
+            키울 수 있어요
+          </div>
+        </div>
+        <div id="tabContents2" class="tab-contents">
+          <div class="contents">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-05/contents02.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="txt">
+            강요하지 않아도 <span class="highlight">스스로 학습하는 힘</span> 을
+            키울 수 있어요
+          </div>
+        </div>
+        <div id="tabContents3" class="tab-contents">
+          <div class="contents">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-05/contents03.png"
               alt=""
               width="100%"
             />
@@ -278,10 +346,10 @@
     <section class="section-06">
       <div class="container">
         <div>
-          <div class="heading">
+          <div class="txt-box">
             <div class="txt-1">추가 학습을 위한</div>
             <div class="txt-2">자유 학습 콘텐츠</div>
-            <div class="dodo"></div>
+            <div class="img-character"></div>
           </div>
           <div class="card">
             <div class="card-image">
@@ -290,7 +358,7 @@
                 alt=""
               />
             </div>
-            <div class="card-text">
+            <div class="card-txt-box">
               <div class="txt-1">01</div>
               <div class="txt-2">Movies</div>
               <div class="txt-3">
@@ -305,7 +373,7 @@
                 alt=""
               />
             </div>
-            <div class="card-text">
+            <div class="card-txt-box">
               <div class="txt-1">03</div>
               <div class="txt-2">AI Studio</div>
               <div class="txt-3">
@@ -322,7 +390,7 @@
                 alt=""
               />
             </div>
-            <div class="card-text">
+            <div class="card-txt-box">
               <div class="txt-1">02</div>
               <div class="txt-2">Books</div>
               <div class="txt-3">
@@ -337,12 +405,22 @@
                 alt=""
               />
             </div>
-            <div class="card-text">
+            <div class="card-txt-box">
               <div class="txt-1">04</div>
               <div class="txt-2">Activity</div>
               <div class="txt-3">
                 액티비티 별 복습 가능 반복학습 및 리워드 획득
               </div>
+            </div>
+            <div class="ani-mark">
+              <dotlottie-player
+                src="/src/assets/images/hidodo-main-images/section-06/lottie-seal.json"
+                background="transparent"
+                speed="0.5"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
             </div>
           </div>
         </div>
@@ -357,27 +435,27 @@
           <span class="highlight">놀이식 보상</span>시스템
         </div>
       </div>
-      <div class="cards">
+      <div class="container">
         <div class="card">
-          <div class="card-image">
+          <div class="image">
             <img
               src="/src/assets/images/hidodo-main-images/section-07/card_img_01.png"
               alt=""
             />
           </div>
-          <div class="card-text">
+          <div class="txt-box">
             <div class="txt-1">Game</div>
             <div class="txt-2">액티비티 반복 학습 및 리워드 획득</div>
           </div>
         </div>
         <div class="card">
-          <div class="card-image">
+          <div class="image">
             <img
               src="/src/assets/images/hidodo-main-images/section-07/card_img_02.png"
               alt=""
             />
           </div>
-          <div class="card-text">
+          <div class="txt-box">
             <div class="txt-1">My Pet</div>
             <div class="txt-2">코인을 활용하여 획득한 마이펫 육성</div>
           </div>
@@ -391,62 +469,118 @@
         <div class="txt-1">하이도도와 만나 본</div>
         <div class="txt-2">친구들의 이야기를 들어보세요.</div>
       </div>
-      <div class="user-review-container">
+      <div class="container">
         <div class="row-1">
-          <div class="tag orange">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents orange">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag purple">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents purple">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag yellow">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents yellow">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag pink">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents pink">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents orange">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents purple">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents yellow">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents pink">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
         </div>
         <div class="row-2">
-          <div class="tag gray">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents orange">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag purple">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents purple">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag yellow">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents yellow">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
           </div>
-          <div class="tag pink">
-            <div class="photo"></div>
-            <div class="tag-text">
+          <div class="contents pink">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents orange">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents purple">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents yellow">
+            <div class="image"></div>
+            <div class="txt-box">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="contents pink">
+            <div class="image"></div>
+            <div class="txt-box">
               <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
               <div class="txt-2">*** 어머님</div>
             </div>
@@ -454,8 +588,6 @@
         </div>
       </div>
     </section>
-
-    <div class="go-to-top"></div>
 
     <!-- 벨트 : 앱 다운로드 -->
     <div class="app-download-belt">
@@ -486,9 +618,13 @@
         </div>
       </div>
     </div>
+
+    <div class="go-to-top"></div>
+
     <common-footer></common-footer>
 
     <!-- 콤포넌트 -->
+    <script src="/src/components/slide-contents.js"></script>
     <script src="/src/components/nav-bar.js"></script>
     <script src="/src/components/footer.js"></script>
     <script>
@@ -499,11 +635,11 @@
         const elementTop = element.getBoundingClientRect().top;
 
         if (elementTop < scrollY) {
-          const cards = document.querySelectorAll(".fade-card");
+          const cards = document.querySelectorAll(".ani-card");
 
           cards.forEach((card, index) => {
             setTimeout(() => {
-              card.className = "fade-card active";
+              card.className = "ani-card active";
             }, index * 200);
           });
         }
@@ -512,5 +648,39 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      // 섹션3. 슬라이드가 센터 중심으로 넘어가는 효과
+      const slideBox = $("#ceterModeSlide");
+      const containerWidth = window.innerWidth;
+
+      slideBox.slick({
+        centerMode: true,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        prevArrow: `<div class="prev-arrow"></div>`,
+        nextArrow: `<div class="next-arrow"></div>`,
+      });
+    </script>
+    <script>
+      // 섹션4. 탭 콘텐츠
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-contents");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+
+        tablinks = document.getElementsByClassName("tab-item");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
   </body>
 </html>

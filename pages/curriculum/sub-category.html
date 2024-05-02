@@ -20,20 +20,62 @@
     </div>
 
     <!-- 각 섹션 이동 탭 메뉴 -->
-    <div class="section-tabs">
+    <div id="sectionTabs" class="section-tabs">
       <div class="menu">
-        <div class="item active">ACTIVITY</div>
-        <div class="item">MY PET 육성</div>
-        <div class="item">GAME</div>
-        <div class="item">MOVIE</div>
-        <div class="item">E-BOOK</div>
-        <div class="item">AI STUDIO</div>
-        <div class="item">부모용 학습 관리 시스템</div>
+        <button
+          class="section-menu-item active"
+          onclick="scrollToSection('section01')"
+          data-target="section01"
+        >
+          ACTIVITY
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section02')"
+          data-target="section02"
+        >
+          MY PET 육성
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section03')"
+          data-target="section03"
+        >
+          GAME
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section04')"
+          data-target="section04"
+        >
+          MOVIE
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section05')"
+          data-target="section05"
+        >
+          E-BOOK
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section06')"
+          data-target="section06"
+        >
+          AI STUDIO
+        </button>
+        <button
+          class="section-menu-item"
+          onclick="scrollToSection('section07')"
+          data-target="section07"
+        >
+          부모용 학습 관리 시스템
+        </button>
       </div>
     </div>
 
     <!-- 01 Activity -->
-    <div class="section-01">
+    <div id="section01" class="section section-01">
       <div class="section-head">
         <div class="txt-1">01</div>
         <div class="txt-2">Activity</div>
@@ -72,7 +114,7 @@
     </div>
 
     <!-- 02 My Pet 육성 -->
-    <div class="section-02">
+    <div id="section02" class="section section-02">
       <div class="section-head">
         <div class="txt-1">02</div>
         <div class="txt-2">My Pet 육성</div>
@@ -117,7 +159,7 @@
     </div>
 
     <!-- 03 Game -->
-    <div class="section-03">
+    <div id="section03" class="section section-03">
       <div class="section-head">
         <div class="txt-1">03</div>
         <div class="txt-2">Game</div>
@@ -189,7 +231,7 @@
     </div>
 
     <!-- 04 Movie -->
-    <div class="section-04">
+    <div id="section04" class="section section-04">
       <div class="section-head">
         <div class="txt-1">04</div>
         <div class="txt-2">Movie</div>
@@ -235,7 +277,7 @@
     </div>
 
     <!-- 05 E-Book -->
-    <div class="section-05">
+    <div id="section05" class="section section-05">
       <div class="section-head">
         <div class="txt-1">05</div>
         <div class="txt-2">E-Book</div>
@@ -296,7 +338,7 @@
     </div>
 
     <!-- 06 AI STUDIO -->
-    <div class="section-06">
+    <div id="section06" class="section section-06">
       <div class="section-head">
         <div class="txt-1">06</div>
         <div class="txt-2">AI STUDIO</div>
@@ -357,7 +399,7 @@
     </div>
 
     <!-- 07 부모용 학습 관리 시스템 -->
-    <div class="section-07">
+    <div id="section07" class="section section-07">
       <div class="section-head">
         <div class="txt-1">07</div>
         <div class="txt-2">부모용 학습 관리 시스템</div>
@@ -398,5 +440,48 @@
     <!-- 콤포넌트 -->
     <script src="/src/components/nav-bar.js"></script>
     <script src="/src/components/footer.js"></script>
+    <script>
+      // 섹션과 관련된 탭 색상 변경
+      function changeTabColor(sectionId) {
+        // 모든 탭 버튼에서 활성 클래스 제거
+        var tabButtons = document.querySelectorAll(".section-menu-item");
+        tabButtons.forEach(function (button) {
+          button.classList.remove("active");
+        });
+
+        // 현재 섹션에 해당하는 탭을 활성화
+        var correspondingTab = document.querySelector(
+          `button[data-target="${sectionId}"]`
+        );
+        if (correspondingTab) {
+          correspondingTab.classList.add("active");
+        }
+      }
+
+      // 스크롤 이벤트 리스너 추가
+      window.addEventListener("scroll", function () {
+        var sections = document.querySelectorAll(".section");
+        var currentSectionId = "";
+
+        // 현재 스크롤 위치에서 가장 가까운 섹션 식별
+        sections.forEach(function (section) {
+          var rect = section.getBoundingClientRect();
+          if (rect.top <= 50 && rect.bottom >= 50) {
+            currentSectionId = section.id;
+          }
+        });
+
+        // 현재 섹션에 해당하는 탭 색상 변경
+        changeTabColor(currentSectionId);
+      });
+
+      // 탭 클릭 시 해당 섹션으로 스크롤 이동
+      function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
   </body>
 </html>

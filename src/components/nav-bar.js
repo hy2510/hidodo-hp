@@ -9,9 +9,25 @@ class GlobalNavBar extends HTMLElement {
           <span class="logo"></span>
         </div>
         <div class="group2">
-          <div class="gnb-item active">하이도도</div>
-          <div class="gnb-item">커리큘럼</div>
-          <div class="gnb-item">멤버십</div>
+          <div class="gnb-item active">
+            <span>하이도도</span>
+            <div class="menu">
+              <div class="menu-item active">하이도도</div>
+              <div class="menu-item">캐릭터 소개</div>
+              <div class="menu-item">이용후기</div>
+            </div>
+          </div>
+          <div class="gnb-item">
+            <span>커리큘럼</span>
+            <div class="menu">
+              <div class="menu-item active">개요</div>
+              <div class="menu-item">데일리 코스</div>
+              <div class="menu-item">서브 카테고리</div>
+            </div>
+          </div>
+          <div class="gnb-item">
+            <span>멤버십</span>
+          </div>
         </div>
         <div class="group3">
           <a href="" id="logIn" class="link dark">로그인 / 회원가입</a>

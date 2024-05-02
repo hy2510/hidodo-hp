@@ -13,13 +13,13 @@ section {
 .section-01 {
   width: 100%;
   height: 800px;
-  .slide {
+  .container {
     max-width: var(--container_width);
     min-height: 800px;
     margin: auto;
     position: relative;
-    .btn-slide-left,
-    .btn-slide-right {
+    .btn-chev-left,
+    .btn-chev-right {
       cursor: pointer;
       position: absolute;
       top: calc(50% - 35px);
@@ -28,14 +28,14 @@ section {
       background-repeat: no-repeat;
       background-size: contain;
     }
-    .btn-slide-left {
+    .btn-chev-left {
       left: -100px;
       background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_off.svg");
       &:hover {
         background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_on.svg");
       }
     }
-    .btn-slide-right {
+    .btn-chev-right {
       right: -100px;
       background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_off.svg");
       &:hover {
@@ -45,7 +45,7 @@ section {
   }
   .slide-1 {
     position: relative;
-    .text-group {
+    .text-box {
       padding-top: 150px;
       padding-left: 80px;
       .txt-1 {
@@ -151,11 +151,11 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    .cards {
+    .ani-card-box {
       display: flex;
       gap: 10px;
       padding-bottom: 100px;
-      .fade-card {
+      .ani-card {
         min-width: 210px;
         background-color: #fff;
         border-radius: 20px;
@@ -240,13 +240,13 @@ section {
     display: grid;
     grid-template-columns: 720px 1fr;
     gap: 60px;
-    .screenshot-image {
+    .image {
       img {
         width: 100%;
         // height: fit-content;
       }
     }
-    .text-group {
+    .text-box {
       .quote-marks {
         width: 34px;
         height: 25px;
@@ -284,7 +284,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 80px;
-    .text-group-1 {
+    .text-box-1 {
       @include section-heading();
       .txt-1 {
         margin-bottom: 5px;
@@ -309,7 +309,7 @@ section {
         }
       }
     }
-    .text-group-2 {
+    .text-box-2 {
       display: grid;
       gap: 20px;
       .txt-1 {
@@ -331,9 +331,6 @@ section {
   }
   .container {
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 700px 1fr;
-    gap: 10px;
     overflow: hidden;
     .screen-shot-left,
     .screen-shot-right {
@@ -397,6 +394,91 @@ section {
       }
     }
   }
+  #ceterModeSlide {
+    position: relative;
+    .slick-arrow {
+      cursor: pointer;
+      position: absolute;
+      top: calc(50% - 30px);
+      bottom: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: center;
+      &.prev-arrow {
+        left: 30%;
+        background-image: url("/src/assets/images/icons/chevron-left.svg");
+      }
+      &.next-arrow {
+        right: 30%;
+        background-image: url("/src/assets/images/icons/chevron-right.svg");
+      }
+    }
+    .slick-slide {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.slick-center {
+        .contents {
+          width: 680px;
+          height: 400px;
+          background-size: 0;
+          filter: grayscale(0);
+          .center {
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          .txt {
+            display: flex;
+          }
+        }
+      }
+      .contents {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        filter: grayscale(1);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: center;
+        .center {
+          opacity: 0;
+          transition: opacity 1s;
+        }
+        .txt {
+          display: none;
+          height: 40px;
+          align-items: center;
+          gap: 10px;
+          margin: auto;
+          font-size: 1.5em;
+          font-family: $jalnan-font;
+          padding-right: 50px;
+          &::before {
+            content: "";
+            width: 50px;
+            height: 40px;
+            background-image: url("/src/assets/images/hidodo-main-images/section-04/arrow_icon.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-05 {
@@ -416,12 +498,13 @@ section {
     width: 100%;
     max-width: var(--container_width);
     margin: auto;
-    .tabs {
+    .tab-items {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
       margin-bottom: 20px;
       .tab-item {
+        cursor: pointer;
         width: calc(100% - 62px);
         min-height: 60px;
         padding: 30px;
@@ -476,6 +559,10 @@ section {
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      display: none;
+      &.active {
+        display: flex;
+      }
       .contents {
         width: 100%;
       }
@@ -522,7 +609,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    .heading {
+    .txt-box {
       @include section-heading();
       color: #fff;
       position: relative;
@@ -535,7 +622,7 @@ section {
       .txt-2 {
         font-family: $jalnan-font;
       }
-      .dodo {
+      .img-character {
         width: 215px;
         height: 260px;
         background-image: url("/src/assets/images/hidodo-main-images/section-06/dodo.svg");
@@ -552,13 +639,15 @@ section {
       border-radius: 20px;
       margin-bottom: 20px;
       min-height: 380px;
+      position: relative;
+      z-index: 1;
       .card-image {
         margin-bottom: 30px;
         img {
           width: 100%;
         }
       }
-      .card-text {
+      .card-txt-box {
         .txt-1 {
           color: var(--light-purple);
           font-size: 1.5em;
@@ -575,6 +664,12 @@ section {
           font-size: 1.2em;
           color: var(--gray);
         }
+      }
+      .ani-mark {
+        position: absolute;
+        right: -200px;
+        bottom: -200px;
+        z-index: 0;
       }
     }
   }
@@ -602,7 +697,7 @@ section {
       }
     }
   }
-  .cards {
+  .container {
     width: 100%;
     max-width: var(--container_width);
     margin: auto;
@@ -614,7 +709,7 @@ section {
       border-radius: 20px;
       min-height: 280px;
       padding: 60px;
-      .card-image {
+      .image {
         width: 100%;
         margin-bottom: 20px;
         img {
@@ -622,7 +717,7 @@ section {
           height: fit-content;
         }
       }
-      .card-text {
+      .txt-box {
         padding: 0 5px;
         .txt-1 {
           color: var(--purple);
@@ -657,7 +752,7 @@ section {
       @include section-heading();
     }
   }
-  .user-review-container {
+  .container {
     display: grid;
     gap: 20px;
     width: 100%;
@@ -666,7 +761,7 @@ section {
     .row-2 {
       display: flex;
       gap: 30px;
-      .tag {
+      .contents {
         padding: 20px;
         background-color: #f2f3f6;
         border-radius: 100px;
@@ -690,13 +785,13 @@ section {
           background-color: #f19a38;
           color: #fff;
         }
-        .photo {
+        .image {
           width: 120px;
           height: 120px;
           background-color: #fff;
           border-radius: 100px;
         }
-        .tag-text {
+        .txt-box {
           height: 100%;
           display: flex;
           flex-direction: column;
@@ -704,6 +799,12 @@ section {
           padding-left: 20px;
         }
       }
+    }
+    .row-1 {
+      animation: marquee 50s linear infinite;
+    }
+    .row-2 {
+      animation: marquee 40s linear reverse infinite;
     }
   }
 }
@@ -724,7 +825,7 @@ section {
     align-items: center;
     flex-wrap: nowrap;
     gap: 60px;
-    animation: marquee 60s linear infinite;
+    animation: marquee 15s linear infinite;
     .download-message {
       min-width: 580px;
       color: #fff;

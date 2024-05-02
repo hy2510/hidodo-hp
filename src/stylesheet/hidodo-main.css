@@ -7,14 +7,14 @@ section {
   width: 100%;
   height: 800px;
 }
-.section-01 .slide {
+.section-01 .container {
   max-width: var(--container_width);
   min-height: 800px;
   margin: auto;
   position: relative;
 }
-.section-01 .slide .btn-slide-left,
-.section-01 .slide .btn-slide-right {
+.section-01 .container .btn-chev-left,
+.section-01 .container .btn-chev-right {
   cursor: pointer;
   position: absolute;
   top: calc(50% - 35px);
@@ -23,36 +23,36 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.section-01 .slide .btn-slide-left {
+.section-01 .container .btn-chev-left {
   left: -100px;
   background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_off.svg");
 }
-.section-01 .slide .btn-slide-left:hover {
+.section-01 .container .btn-chev-left:hover {
   background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_on.svg");
 }
-.section-01 .slide .btn-slide-right {
+.section-01 .container .btn-chev-right {
   right: -100px;
   background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_off.svg");
 }
-.section-01 .slide .btn-slide-right:hover {
+.section-01 .container .btn-chev-right:hover {
   background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_on.svg");
 }
 .section-01 .slide-1 {
   position: relative;
 }
-.section-01 .slide-1 .text-group {
+.section-01 .slide-1 .text-box {
   padding-top: 150px;
   padding-left: 80px;
 }
-.section-01 .slide-1 .text-group .txt-1 {
+.section-01 .slide-1 .text-box .txt-1 {
   display: flex;
   margin-bottom: 32px;
 }
-.section-01 .slide-1 .text-group .txt-1 span {
+.section-01 .slide-1 .text-box .txt-1 span {
   font-size: 1.5em;
   position: relative;
 }
-.section-01 .slide-1 .text-group .txt-1 span::after {
+.section-01 .slide-1 .text-box .txt-1 span::after {
   content: "";
   height: 1px;
   background-color: #707070;
@@ -61,12 +61,12 @@ section {
   right: 0;
   bottom: -10px;
 }
-.section-01 .slide-1 .text-group .txt-2 {
+.section-01 .slide-1 .text-box .txt-2 {
   font-family: "JalnanGothic", sans-serif;
   font-size: 3.5em;
   position: relative;
 }
-.section-01 .slide-1 .text-group .txt-2::after {
+.section-01 .slide-1 .text-box .txt-2::after {
   content: "";
   position: absolute;
   top: -145px;
@@ -77,7 +77,7 @@ section {
   background-size: contain;
   z-index: -1;
 }
-.section-01 .slide-1 .text-group .txt-3 {
+.section-01 .slide-1 .text-box .txt-3 {
   font-family: "JalnanGothic", sans-serif;
   font-size: 3.5em;
   background: linear-gradient(270deg, #4416ce -22.51%, #dd468f 102.64%);
@@ -86,7 +86,7 @@ section {
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
-.section-01 .slide-1 .text-group .brand-logo {
+.section-01 .slide-1 .text-box .brand-logo {
   width: 340px;
   height: 102px;
   background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/brand_logo.svg");
@@ -143,12 +143,12 @@ section {
   background-position: center;
   background-size: contain;
 }
-.section-02 .container .cards {
+.section-02 .container .ani-card-box {
   display: flex;
   gap: 10px;
   padding-bottom: 100px;
 }
-.section-02 .container .cards .fade-card {
+.section-02 .container .ani-card-box .ani-card {
   min-width: 210px;
   background-color: #fff;
   border-radius: 20px;
@@ -163,30 +163,30 @@ section {
   opacity: 0;
   transform: scale(0.8);
 }
-.section-02 .container .cards .fade-card.active {
+.section-02 .container .ani-card-box .ani-card.active {
   opacity: 1;
   transform: scale(1);
 }
-.section-02 .container .cards .fade-card .row-1 {
+.section-02 .container .ani-card-box .ani-card .row-1 {
   display: grid;
   gap: 5px;
 }
-.section-02 .container .cards .fade-card .row-1 .txt-1 {
+.section-02 .container .ani-card-box .ani-card .row-1 .txt-1 {
   color: #707070;
   font-size: 1.1em;
   letter-spacing: -1px;
 }
-.section-02 .container .cards .fade-card .row-1 .txt-2 {
+.section-02 .container .ani-card-box .ani-card .row-1 .txt-2 {
   color: #222222;
   font-size: 1.5em;
   font-weight: 700;
 }
-.section-02 .container .cards .fade-card .row-2 {
+.section-02 .container .ani-card-box .ani-card .row-2 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.section-02 .container .cards .fade-card .row-2 img {
+.section-02 .container .ani-card-box .ani-card .row-2 img {
   width: 72px;
 }
 
@@ -232,10 +232,10 @@ section {
   grid-template-columns: 720px 1fr;
   gap: 60px;
 }
-.section-03 .container .screenshot-image img {
+.section-03 .container .image img {
   width: 100%;
 }
-.section-03 .container .text-group .quote-marks {
+.section-03 .container .text-box .quote-marks {
   width: 34px;
   height: 25px;
   background-image: url("/src//assets//images/hidodo-main-images/section-03/quote_marks.svg");
@@ -244,14 +244,14 @@ section {
   background-position: center;
   margin-bottom: 10px;
 }
-.section-03 .container .text-group .row-1 {
+.section-03 .container .text-box .row-1 {
   margin-bottom: 30px;
 }
-.section-03 .container .text-group .row-1 .txt {
+.section-03 .container .text-box .row-1 .txt {
   font-size: 1.8em;
   font-weight: 700;
 }
-.section-03 .container .text-group .row-2 .txt {
+.section-03 .container .text-box .row-2 .txt {
   font-size: 1.2em;
   color: var(--gray);
 }
@@ -269,21 +269,21 @@ section {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 80px;
 }
-.section-04 .heading .text-group-1 {
+.section-04 .heading .text-box-1 {
   font-family: "JalnanGothic", sans-serif;
   font-size: 2.8em;
 }
-.section-04 .heading .text-group-1 .txt-1 {
+.section-04 .heading .text-box-1 .txt-1 {
   margin-bottom: 5px;
 }
-.section-04 .heading .text-group-1 .txt-1 span {
+.section-04 .heading .text-box-1 .txt-1 span {
   color: #fc941f;
 }
-.section-04 .heading .text-group-1 .txt-2 {
+.section-04 .heading .text-box-1 .txt-2 {
   position: relative;
   display: flex;
 }
-.section-04 .heading .text-group-1 .txt-2::after {
+.section-04 .heading .text-box-1 .txt-2::after {
   content: "";
   width: 72px;
   height: 72px;
@@ -295,30 +295,27 @@ section {
   left: 140px;
   bottom: -4px;
 }
-.section-04 .heading .text-group-2 {
+.section-04 .heading .text-box-2 {
   display: grid;
   gap: 20px;
 }
-.section-04 .heading .text-group-2 .txt-1 {
+.section-04 .heading .text-box-2 .txt-1 {
   font-size: 1.2em;
   line-height: 1.5;
 }
-.section-04 .heading .text-group-2 .txt-2 {
+.section-04 .heading .text-box-2 .txt-2 {
   font-size: 1.8em;
   font-family: "JalnanGothic", sans-serif;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.section-04 .heading .text-group-2 .txt-2 img {
+.section-04 .heading .text-box-2 .txt-2 img {
   margin-bottom: 5px;
   width: 30px;
 }
 .section-04 .container {
   width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 700px 1fr;
-  gap: 10px;
   overflow: hidden;
 }
 .section-04 .container .screen-shot-left,
@@ -382,6 +379,89 @@ section {
   width: 100%;
   max-width: 300px;
 }
+.section-04 #ceterModeSlide {
+  position: relative;
+}
+.section-04 #ceterModeSlide .slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 30px);
+  bottom: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+}
+.section-04 #ceterModeSlide .slick-arrow.prev-arrow {
+  left: 30%;
+  background-image: url("/src/assets/images/icons/chevron-left.svg");
+}
+.section-04 #ceterModeSlide .slick-arrow.next-arrow {
+  right: 30%;
+  background-image: url("/src/assets/images/icons/chevron-right.svg");
+}
+.section-04 #ceterModeSlide .slick-slide {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-04 #ceterModeSlide .slick-slide.slick-center .contents {
+  width: 680px;
+  height: 400px;
+  background-size: 0;
+  filter: grayscale(0);
+}
+.section-04 #ceterModeSlide .slick-slide.slick-center .contents .center {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-04 #ceterModeSlide .slick-slide.slick-center .contents .txt {
+  display: flex;
+}
+.section-04 #ceterModeSlide .slick-slide .contents {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(1);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+}
+.section-04 #ceterModeSlide .slick-slide .contents .center {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.section-04 #ceterModeSlide .slick-slide .contents .txt {
+  display: none;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  font-size: 1.5em;
+  font-family: "JalnanGothic", sans-serif;
+  padding-right: 50px;
+}
+.section-04 #ceterModeSlide .slick-slide .contents .txt::before {
+  content: "";
+  width: 50px;
+  height: 40px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-04/arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .section-05 {
   padding: 100px 0;
@@ -403,13 +483,14 @@ section {
   max-width: var(--container_width);
   margin: auto;
 }
-.section-05 .container .tabs {
+.section-05 .container .tab-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 20px;
 }
-.section-05 .container .tabs .tab-item {
+.section-05 .container .tab-items .tab-item {
+  cursor: pointer;
   width: calc(100% - 62px);
   min-height: 60px;
   padding: 30px;
@@ -422,15 +503,15 @@ section {
   color: var(--gray);
   position: relative;
 }
-.section-05 .container .tabs .tab-item.active {
+.section-05 .container .tab-items .tab-item.active {
   color: #fff;
   background-color: var(--purple);
 }
-.section-05 .container .tabs .tab-item.active .icon {
+.section-05 .container .tab-items .tab-item.active .icon {
   filter: grayscale(0);
   opacity: 1;
 }
-.section-05 .container .tabs .tab-item .icon {
+.section-05 .container .tab-items .tab-item .icon {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -440,21 +521,21 @@ section {
   filter: grayscale(100%);
   opacity: 0.9;
 }
-.section-05 .container .tabs .tab-item .icon.books {
+.section-05 .container .tab-items .tab-item .icon.books {
   background-image: url("/src/assets/images/hidodo-main-images/section-05/book_icon.png");
 }
-.section-05 .container .tabs .tab-item .icon.coin {
+.section-05 .container .tab-items .tab-item .icon.coin {
   background-image: url("/src/assets/images/hidodo-main-images/section-05/coin_icon.png");
 }
-.section-05 .container .tabs .tab-item .icon.paw {
+.section-05 .container .tab-items .tab-item .icon.paw {
   background-image: url("/src/assets/images/hidodo-main-images/section-05/paw_icon.png");
 }
-.section-05 .container .tabs .tab-item .txt-1 {
+.section-05 .container .tab-items .tab-item .txt-1 {
   margin-top: 5px;
   font-size: 1em;
   font-weight: 500;
 }
-.section-05 .container .tabs .tab-item .txt-2 {
+.section-05 .container .tab-items .tab-item .txt-2 {
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -463,6 +544,10 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  display: none;
+}
+.section-05 .container .tab-contents.active {
+  display: flex;
 }
 .section-05 .container .tab-contents .contents {
   width: 100%;
@@ -509,7 +594,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.section-06 .container .heading {
+.section-06 .container .txt-box {
   font-family: "JalnanGothic", sans-serif;
   font-size: 2.8em;
   color: #fff;
@@ -517,14 +602,14 @@ section {
   height: 190px;
   overflow: hidden;
 }
-.section-06 .container .heading .txt-1 {
+.section-06 .container .txt-box .txt-1 {
   font-family: sans-serif;
   font-weight: 500;
 }
-.section-06 .container .heading .txt-2 {
+.section-06 .container .txt-box .txt-2 {
   font-family: "JalnanGothic", sans-serif;
 }
-.section-06 .container .heading .dodo {
+.section-06 .container .txt-box .img-character {
   width: 215px;
   height: 260px;
   background-image: url("/src/assets/images/hidodo-main-images/section-06/dodo.svg");
@@ -540,6 +625,8 @@ section {
   border-radius: 20px;
   margin-bottom: 20px;
   min-height: 380px;
+  position: relative;
+  z-index: 1;
 }
 .section-06 .container .card .card-image {
   margin-bottom: 30px;
@@ -547,21 +634,27 @@ section {
 .section-06 .container .card .card-image img {
   width: 100%;
 }
-.section-06 .container .card .card-text .txt-1 {
+.section-06 .container .card .card-txt-box .txt-1 {
   color: var(--light-purple);
   font-size: 1.5em;
   font-family: "JalnanGothic", sans-serif;
   margin-bottom: 20px;
 }
-.section-06 .container .card .card-text .txt-2 {
+.section-06 .container .card .card-txt-box .txt-2 {
   font-size: 2em;
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 10px;
 }
-.section-06 .container .card .card-text .txt-3 {
+.section-06 .container .card .card-txt-box .txt-3 {
   font-size: 1.2em;
   color: var(--gray);
+}
+.section-06 .container .card .ani-mark {
+  position: absolute;
+  right: -200px;
+  bottom: -200px;
+  z-index: 0;
 }
 
 .section-07 {
@@ -588,7 +681,7 @@ section {
 .section-07 .heading .txt-2 .highlight {
   color: #f7ce46;
 }
-.section-07 .cards {
+.section-07 .container {
   width: 100%;
   max-width: var(--container_width);
   margin: auto;
@@ -596,31 +689,31 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.section-07 .cards .card {
+.section-07 .container .card {
   background-color: #fff;
   border-radius: 20px;
   min-height: 280px;
   padding: 60px;
 }
-.section-07 .cards .card .card-image {
+.section-07 .container .card .image {
   width: 100%;
   margin-bottom: 20px;
 }
-.section-07 .cards .card .card-image img {
+.section-07 .container .card .image img {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
 }
-.section-07 .cards .card .card-text {
+.section-07 .container .card .txt-box {
   padding: 0 5px;
 }
-.section-07 .cards .card .card-text .txt-1 {
+.section-07 .container .card .txt-box .txt-1 {
   color: var(--purple);
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.section-07 .cards .card .card-text .txt-2 {
+.section-07 .container .card .txt-box .txt-2 {
   color: var(--gray);
   font-size: 1.2em;
 }
@@ -645,19 +738,19 @@ section {
   font-family: "JalnanGothic", sans-serif;
   font-size: 2.8em;
 }
-.section-08 .user-review-container {
+.section-08 .container {
   display: grid;
   gap: 20px;
   width: 100%;
   overflow-x: hidden;
 }
-.section-08 .user-review-container .row-1,
-.section-08 .user-review-container .row-2 {
+.section-08 .container .row-1,
+.section-08 .container .row-2 {
   display: flex;
   gap: 30px;
 }
-.section-08 .user-review-container .row-1 .tag,
-.section-08 .user-review-container .row-2 .tag {
+.section-08 .container .row-1 .contents,
+.section-08 .container .row-2 .contents {
   padding: 20px;
   background-color: #f2f3f6;
   border-radius: 100px;
@@ -666,40 +759,46 @@ section {
   gap: 20px;
   min-width: 500px;
 }
-.section-08 .user-review-container .row-1 .tag.purple,
-.section-08 .user-review-container .row-2 .tag.purple {
+.section-08 .container .row-1 .contents.purple,
+.section-08 .container .row-2 .contents.purple {
   background-color: #4416ce;
   color: #fff;
 }
-.section-08 .user-review-container .row-1 .tag.yellow,
-.section-08 .user-review-container .row-2 .tag.yellow {
+.section-08 .container .row-1 .contents.yellow,
+.section-08 .container .row-2 .contents.yellow {
   background-color: #f7ce46;
   color: #fff;
 }
-.section-08 .user-review-container .row-1 .tag.pink,
-.section-08 .user-review-container .row-2 .tag.pink {
+.section-08 .container .row-1 .contents.pink,
+.section-08 .container .row-2 .contents.pink {
   background-color: #dd468f;
   color: #fff;
 }
-.section-08 .user-review-container .row-1 .tag.orange,
-.section-08 .user-review-container .row-2 .tag.orange {
+.section-08 .container .row-1 .contents.orange,
+.section-08 .container .row-2 .contents.orange {
   background-color: #f19a38;
   color: #fff;
 }
-.section-08 .user-review-container .row-1 .tag .photo,
-.section-08 .user-review-container .row-2 .tag .photo {
+.section-08 .container .row-1 .contents .image,
+.section-08 .container .row-2 .contents .image {
   width: 120px;
   height: 120px;
   background-color: #fff;
   border-radius: 100px;
 }
-.section-08 .user-review-container .row-1 .tag .tag-text,
-.section-08 .user-review-container .row-2 .tag .tag-text {
+.section-08 .container .row-1 .contents .txt-box,
+.section-08 .container .row-2 .contents .txt-box {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 20px;
+}
+.section-08 .container .row-1 {
+  animation: marquee 50s linear infinite;
+}
+.section-08 .container .row-2 {
+  animation: marquee 40s linear reverse infinite;
 }
 
 .app-download-belt {
@@ -719,7 +818,7 @@ section {
   align-items: center;
   flex-wrap: nowrap;
   gap: 60px;
-  animation: marquee 60s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 .app-download-belt .slide .download-message {
   min-width: 580px;

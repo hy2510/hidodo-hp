@@ -19,11 +19,10 @@
       </div>
     </div>
 
-    <!-- 페이지 베너 -->
-    <div class="banner">
-      <div class="banner-contents">
+    <div class="container-1">
+      <div class="box">
         <div class="txt">Daily Lesson (본 학습)</div>
-        <div class="container">
+        <div class="row">
           <div class="col-1">
             <img
               src="/src/assets/images/curricoulum-daily-course/daily_course_sample.png"
@@ -31,21 +30,21 @@
             />
           </div>
           <div class="col-2">
-            <div class="col-2-txt">
+            <div class="txt-p">
               학습자가 하루에 해야 하는 학습 콘텐츠 및 학습량을
               <b>Daily Lesson</b>으로 제공
             </div>
-            <div class="col-2-txt">
+            <div class="txt-p">
               <span class="highlight">총 4단계의 코스로 구성</span>
             </div>
-            <div class="col-2-txt">
+            <div class="txt-p">
               <span class="highlight"
                 >코스는 Stage로 나눠지며, 각 Stage당 20~24일 과정의 데일리
                 레슨들로 구성</span
               ><br />
               <b> (총 24개월 과정) </b>
             </div>
-            <div class="col-2-txt">
+            <div class="txt-p">
               데일리 레슨은 일반 학습과 복습 학습을 구성되어 반복 학습 유도
             </div>
           </div>
@@ -53,11 +52,10 @@
       </div>
     </div>
 
-    <!-- 콘텐츠 -->
-    <div class="contents">
+    <div class="container-2">
       <div class="row-1">
         <div class="txt">Daily Lesson 예시</div>
-        <div class="chart">
+        <div class="image">
           <img
             src="/src/assets/images/curricoulum-daily-course/daily-lesson-chart.svg"
             alt=""
@@ -65,86 +63,186 @@
         </div>
       </div>
       <div class="row-2">
-        <div class="row-2-section-1">
+        <div class="row-2-1">
           <div class="txt-1"><span class="num">1</span>일반 학습</div>
           <div class="txt-2">
             DAY 01) 챈트 영상 <b>1편</b>, 액티비티 <b>4개</b>, 애니메이션
             <b>1편</b>(Book <b>1편</b>)
           </div>
-          <div class="container">
+          <div class="contents">
             <div class="col-1">
-              <img
-                src="/src/assets/images/curricoulum-daily-course/daily_course_sample_2.png"
-                alt=""
-              />
+              <div id="course1Step1" class="course1-image active">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step01.png"
+                  alt=""
+                />
+              </div>
+              <div id="course1Step2" class="course1-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step02.png"
+                  alt=""
+                />
+              </div>
+              <div id="course1Step3" class="course1-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step03.png"
+                  alt=""
+                />
+              </div>
+              <div id="course1Step4" class="course1-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step04.png"
+                  alt=""
+                />
+              </div>
+              <div id="course1Step5" class="course1-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step05.png"
+                  alt=""
+                />
+              </div>
+              <div id="course1Step6" class="course1-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/1-step06.png"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="col-2">
-              <div class="list-item active">
+              <div
+                class="course1-list-item active"
+                onclick="openCourse1Step(event, 'course1Step1')"
+              >
                 <span class="step">STEP 01</span>알파벳 챈트 영상
               </div>
-              <div class="list-item">
+              <div
+                class="course1-list-item"
+                onclick="openCourse1Step(event, 'course1Step2')"
+              >
                 <span class="step">STEP 02</span>알파벳 따라 쓰기
               </div>
-              <div class="list-item">
+              <div
+                class="course1-list-item"
+                onclick="openCourse1Step(event, 'course1Step3')"
+              >
                 <span class="step">STEP 03</span>대소문자 구별
               </div>
-              <div class="list-item">
-                <span class="step">STEP 04</span>대소문자 구별
+              <div
+                class="course1-list-item"
+                onclick="openCourse1Step(event, 'course1Step4')"
+              >
+                <span class="step">STEP 04</span>알파벳 음가 학습
               </div>
-              <div class="list-item">
-                <span class="step">STEP 05</span>대소문자 구별
+              <div
+                class="course1-list-item"
+                onclick="openCourse1Step(event, 'course1Step5')"
+              >
+                <span class="step">STEP 05</span>알파벳 단어 학습
               </div>
-              <div class="list-item">
-                <span class="step">STEP 06</span>대소문자 구별
+              <div
+                class="course1-list-item"
+                onclick="openCourse1Step(event, 'course1Step6')"
+              >
+                <span class="step">STEP 06</span>애니메이션 영상
               </div>
               <div class="arrow"></div>
-              <div class="list-item yellow">
+              <div class="course1-list-item yellow">
                 <span class="coin"></span>도도 코인 리워드
               </div>
             </div>
           </div>
         </div>
         <div class="hr"></div>
-        <div class="row-2-section-2">
+        <div class="row-2-2">
           <div class="txt-1"><span class="num">2</span>복습 학습</div>
           <div class="txt-2">
             DAY 01) 챈트 영상 <b>1편</b>, 액티비티 <b>4개</b>, 애니메이션
             <b>1편</b>(Book <b>1편</b>)
           </div>
-          <div class="container">
+          <div class="contents">
             <div class="col-1">
-              <img
-                src="/src/assets/images/curricoulum-daily-course/daily_course_sample_2.png"
-                alt=""
-              />
+              <div id="course2Step1" class="course2-image active">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step01.png"
+                  alt=""
+                />
+              </div>
+              <div id="course2Step2" class="course2-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step02.png"
+                  alt=""
+                />
+              </div>
+              <div id="course2Step3" class="course2-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step03.png"
+                  alt=""
+                />
+              </div>
+              <div id="course2Step4" class="course2-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step04.png"
+                  alt=""
+                />
+              </div>
+              <div id="course2Step5" class="course2-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step05.png"
+                  alt=""
+                />
+              </div>
+              <div id="course2Step6" class="course2-image">
+                <img
+                  src="/src/assets/images/curricoulum-daily-course/course-image/2-step06.png"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="col-2">
-              <div class="list-item active">
+              <div
+                class="course2-list-item active"
+                onclick="openCourse2Step(event, 'course2Step1')"
+              >
                 <span class="step">STEP 01</span>알파벳 챈트 영상
               </div>
-              <div class="list-item-group">
-                <div class="list-item">
-                  <span class="step">STEP 02</span>알파벳 따라 쓰기
+              <div class="list-item-box">
+                <div
+                  class="course2-list-item"
+                  onclick="openCourse2Step(event, 'course2Step2')"
+                >
+                  <span class="step">STEP 02</span>Adaptive Learning
                 </div>
-                <div class="list-item">
-                  <span class="step">STEP 03</span>대소문자 구별
+                <div
+                  class="course2-list-item"
+                  onclick="openCourse2Step(event, 'course2Step3')"
+                >
+                  <span class="step">STEP 03</span>Adaptive Learning
                 </div>
               </div>
               <div class="info">
                 <b>어댑티브 러닝 학습</b> 아이의 집중도와 정답률을 분석해 보충이
                 필요한 액티비티 제공
               </div>
-              <div class="list-item">
-                <span class="step">STEP 04</span>대소문자 구별
+              <div
+                class="course2-list-item"
+                onclick="openCourse2Step(event, 'course2Step4')"
+              >
+                <span class="step">STEP 04</span>대소문자 게임
               </div>
-              <div class="list-item">
-                <span class="step">STEP 05</span>대소문자 구별
+              <div
+                class="course2-list-item"
+                onclick="openCourse2Step(event, 'course2Step5')"
+              >
+                <span class="step">STEP 05</span>음가 게임
               </div>
-              <div class="list-item">
-                <span class="step">STEP 06</span>대소문자 구별
+              <div
+                class="course2-list-item"
+                onclick="openCourse2Step(event, 'course2Step6')"
+              >
+                <span class="step">STEP 06</span>단어 게임
               </div>
               <div class="arrow"></div>
-              <div class="list-item yellow">
+              <div class="course2-list-item yellow">
                 <span class="coin"></span>도도 코인 리워드
               </div>
             </div>
@@ -158,5 +256,40 @@
     <!-- 콤포넌트 -->
     <script src="/src/components/nav-bar.js"></script>
     <script src="/src/components/footer.js"></script>
+    <script>
+      function openCourse1Step(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("course1-image");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+
+        tablinks = document.getElementsByClassName("course1-list-item");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+
+      function openCourse2Step(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("course2-image");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+
+        tablinks = document.getElementsByClassName("course2-list-item");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
   </body>
 </html>
