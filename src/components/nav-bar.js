@@ -11,7 +11,7 @@ class GlobalNavBar extends HTMLElement {
         <div class="group2">
           <div class="gnb-item active">하이도도</div>
           <div class="gnb-item">커리큘럼</div>
-          <div class="gnb-item">멤버쉽</div>
+          <div class="gnb-item">멤버십</div>
         </div>
         <div class="group3">
           <a href="" id="logIn" class="link dark">로그인 / 회원가입</a>

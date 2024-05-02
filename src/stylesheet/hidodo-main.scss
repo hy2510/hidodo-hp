@@ -1,0 +1,767 @@
+$jalnan-font: "JalnanGothic", sans-serif;
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@mixin section-heading {
+  font-family: $jalnan-font;
+  font-size: 2.8em;
+}
+
+.section-01 {
+  width: 100%;
+  height: 800px;
+  .slide {
+    max-width: var(--container_width);
+    min-height: 800px;
+    margin: auto;
+    position: relative;
+    .btn-slide-left,
+    .btn-slide-right {
+      cursor: pointer;
+      position: absolute;
+      top: calc(50% - 35px);
+      width: 70px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .btn-slide-left {
+      left: -100px;
+      background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_off.svg");
+      &:hover {
+        background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_on.svg");
+      }
+    }
+    .btn-slide-right {
+      right: -100px;
+      background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_off.svg");
+      &:hover {
+        background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_on.svg");
+      }
+    }
+  }
+  .slide-1 {
+    position: relative;
+    .text-group {
+      padding-top: 150px;
+      padding-left: 80px;
+      .txt-1 {
+        display: flex;
+        margin-bottom: 32px;
+        span {
+          font-size: 1.5em;
+          position: relative;
+          &::after {
+            content: "";
+            height: 1px;
+            background-color: #707070;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+          }
+        }
+      }
+      .txt-2 {
+        font-family: $jalnan-font;
+        font-size: 3.5em;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -145px;
+          left: -120px;
+          width: 320px;
+          height: 320px;
+          background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/ellipse.svg");
+          background-size: contain;
+          z-index: -1;
+        }
+      }
+      .txt-3 {
+        font-family: $jalnan-font;
+        font-size: 3.5em;
+        background: linear-gradient(270deg, #4416ce -22.51%, #dd468f 102.64%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+      }
+      .brand-logo {
+        width: 340px;
+        height: 102px;
+        background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/brand_logo.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .symbol {
+      position: absolute;
+      top: 150px;
+      right: 80px;
+      z-index: -1;
+      .kids-image {
+        width: 680px;
+        height: 600px;
+        background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/character03.png"),
+          url("/src/assets/images/hidodo-main-images/section-01/slide-01/character02.png"),
+          url("/src/assets/images/hidodo-main-images/section-01/slide-01/character01.png"),
+          url("/src/assets/images/hidodo-main-images/section-01/slide-01/kid.png");
+        background-size: 170px, 120px, 90px, contain;
+        background-repeat: no-repeat;
+        background-position: bottom 30px left, top 30px right 10px,
+          top 20px left 150px, right;
+      }
+    }
+  }
+}
+
+.section-02 {
+  width: 100%;
+  min-height: 700px;
+  background: #f7f0f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .heading {
+    margin-top: 100px;
+    .txt-1 {
+      @include section-heading();
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+      span img {
+        max-width: 180px;
+        display: block;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .container {
+    height: 595px;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("/src/assets/images/hidodo-main-images/section-02/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    .cards {
+      display: flex;
+      gap: 10px;
+      padding-bottom: 100px;
+      .fade-card {
+        min-width: 210px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+        transition: all 0.2s;
+        opacity: 0;
+        transform: scale(0.8);
+        &.active {
+          opacity: 1;
+          transform: scale(1);
+        }
+        .row-1 {
+          display: grid;
+          gap: 5px;
+          .txt-1 {
+            color: #707070;
+            font-size: 1.1em;
+            letter-spacing: -1px;
+          }
+          .txt-2 {
+            color: #222222;
+            font-size: 1.5em;
+            font-weight: 700;
+          }
+        }
+        .row-2 {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          img {
+            width: 72px;
+            // height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-03 {
+  padding: 100px 0;
+  .heading {
+    @include section-heading();
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .txt-1 {
+      color: var(--light-purple);
+      margin-right: 80px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(100% - 8px);
+        bottom: -5px;
+        width: 80px;
+        height: 80px;
+        background-image: url("/src/assets/images/hidodo-main-images/section-03/calendar_icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .txt-2 {
+      color: var(--light-purple);
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    gap: 60px;
+    .screenshot-image {
+      img {
+        width: 100%;
+        // height: fit-content;
+      }
+    }
+    .text-group {
+      .quote-marks {
+        width: 34px;
+        height: 25px;
+        background-image: url("/src//assets//images/hidodo-main-images/section-03/quote_marks.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 10px;
+      }
+      .row-1 {
+        margin-bottom: 30px;
+        .txt {
+          font-size: 1.8em;
+          font-weight: 700;
+        }
+      }
+      .row-2 {
+        .txt {
+          font-size: 1.2em;
+          color: var(--gray);
+        }
+      }
+    }
+  }
+}
+
+.section-04 {
+  padding: 100px 0;
+  background-color: #fdf0eb;
+  min-height: 700px;
+  .heading {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+    .text-group-1 {
+      @include section-heading();
+      .txt-1 {
+        margin-bottom: 5px;
+        span {
+          color: #fc941f;
+        }
+      }
+      .txt-2 {
+        position: relative;
+        display: flex;
+        &::after {
+          content: "";
+          width: 72px;
+          height: 72px;
+          background-image: url("/src/assets/images/hidodo-main-images/section-04/gear_icon.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: 140px;
+          bottom: -4px;
+        }
+      }
+    }
+    .text-group-2 {
+      display: grid;
+      gap: 20px;
+      .txt-1 {
+        font-size: 1.2em;
+        line-height: 1.5;
+      }
+      .txt-2 {
+        font-size: 1.8em;
+        font-family: $jalnan-font;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        img {
+          margin-bottom: 5px;
+          width: 30px;
+        }
+      }
+    }
+  }
+  .container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+    gap: 10px;
+    overflow: hidden;
+    .screen-shot-left,
+    .screen-shot-right {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 20px;
+      overflow: hidden;
+    }
+    .screen-shot-left {
+      justify-content: flex-end;
+    }
+    .screen-shot-center {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .screen-shot-center-container {
+        max-width: 680px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+      }
+      .direction {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: 1.5em;
+        font-family: $jalnan-font;
+        position: relative;
+        &::after {
+          content: "";
+          width: 50px;
+          height: 40px;
+          position: absolute;
+          left: -60px;
+          background-image: url("/src/assets/images/hidodo-main-images/section-04/arrow_icon.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .screen-shot-gray {
+      min-width: 250px;
+      max-width: 250px;
+      min-height: 250px;
+      max-height: 250px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: grayscale(100%);
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+.section-05 {
+  padding: 100px 0;
+  .heading {
+    @include section-heading();
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    span {
+      color: var(--purple);
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+      .tab-item {
+        width: calc(100% - 62px);
+        min-height: 60px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border: 1.5px solid var(--light-gray);
+        border-radius: 20px;
+        color: var(--gray);
+        position: relative;
+        &.active {
+          color: #fff;
+          background-color: var(--purple);
+          .icon {
+            filter: grayscale(0);
+            opacity: 1;
+          }
+        }
+        .icon {
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          top: -60px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          filter: grayscale(100%);
+          opacity: 0.9;
+          &.books {
+            background-image: url("/src/assets/images/hidodo-main-images/section-05/book_icon.png");
+          }
+          &.coin {
+            background-image: url("/src/assets/images/hidodo-main-images/section-05/coin_icon.png");
+          }
+          &.paw {
+            background-image: url("/src/assets/images/hidodo-main-images/section-05/paw_icon.png");
+          }
+        }
+        .txt-1 {
+          margin-top: 5px;
+          font-size: 1em;
+          font-weight: 500;
+        }
+        .txt-2 {
+          font-size: 1.5em;
+          font-weight: 600;
+        }
+      }
+    }
+    .tab-contents {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      .contents {
+        width: 100%;
+      }
+      .txt {
+        font-family: $jalnan-font;
+        font-size: 1.8em;
+        .highlight {
+          position: relative;
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -20px;
+            right: -10px;
+            background-image: url("/src/assets/images/hidodo-main-images/section-05/stars.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 8px;
+            z-index: -1;
+            background-color: #f7ce46;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-06 {
+  background-color: var(--light-purple);
+  padding: 100px 0 120px 0;
+  min-height: 800px;
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .heading {
+      @include section-heading();
+      color: #fff;
+      position: relative;
+      height: 190px;
+      overflow: hidden;
+      .txt-1 {
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+      .txt-2 {
+        font-family: $jalnan-font;
+      }
+      .dodo {
+        width: 215px;
+        height: 260px;
+        background-image: url("/src/assets/images/hidodo-main-images/section-06/dodo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    .card {
+      background-color: #fff;
+      padding: 60px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      min-height: 380px;
+      .card-image {
+        margin-bottom: 30px;
+        img {
+          width: 100%;
+        }
+      }
+      .card-text {
+        .txt-1 {
+          color: var(--light-purple);
+          font-size: 1.5em;
+          font-family: $jalnan-font;
+          margin-bottom: 20px;
+        }
+        .txt-2 {
+          font-size: 2em;
+          font-weight: 700;
+          letter-spacing: -1px;
+          margin-bottom: 10px;
+        }
+        .txt-3 {
+          font-size: 1.2em;
+          color: var(--gray);
+        }
+      }
+    }
+  }
+}
+
+.section-07 {
+  background-color: #4416ce;
+  padding: 100px 0;
+  .heading {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    margin-bottom: 80px;
+    color: #fff;
+    text-align: center;
+    .txt-1 {
+      font-size: 2.8em;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    .txt-2 {
+      @include section-heading();
+      .highlight {
+        color: #f7ce46;
+      }
+    }
+  }
+  .cards {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      min-height: 280px;
+      padding: 60px;
+      .card-image {
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+      }
+      .card-text {
+        padding: 0 5px;
+        .txt-1 {
+          color: var(--purple);
+          font-size: 2em;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .txt-2 {
+          color: var(--gray);
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.section-08 {
+  background: linear-gradient(180deg, #d7f3e9 0%, #f2f7dc 20.5%, #fff 54.5%);
+  padding: 100px 0;
+  min-height: 600px;
+  .heading {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+    .txt-1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .txt-2 {
+      @include section-heading();
+    }
+  }
+  .user-review-container {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    .row-1,
+    .row-2 {
+      display: flex;
+      gap: 30px;
+      .tag {
+        padding: 20px;
+        background-color: #f2f3f6;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        min-width: 500px;
+        &.purple {
+          background-color: #4416ce;
+          color: #fff;
+        }
+        &.yellow {
+          background-color: #f7ce46;
+          color: #fff;
+        }
+        &.pink {
+          background-color: #dd468f;
+          color: #fff;
+        }
+        &.orange {
+          background-color: #f19a38;
+          color: #fff;
+        }
+        .photo {
+          width: 120px;
+          height: 120px;
+          background-color: #fff;
+          border-radius: 100px;
+        }
+        .tag-text {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.app-download-belt {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(270deg, #4416ce -22.51%, #dd468f 102.64%);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  overflow-x: hidden;
+  .slide {
+    cursor: pointer;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 60px;
+    animation: marquee 60s linear infinite;
+    .download-message {
+      min-width: 580px;
+      color: #fff;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .pill {
+        display: block;
+        width: 82px;
+        height: 40px;
+        background-image: url("/src/assets/images/icons/pill_click.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.go-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background-image: url("/src/assets/images/icons/chev_up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

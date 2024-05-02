@@ -1,0 +1,760 @@
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.section-01 {
+  width: 100%;
+  height: 800px;
+}
+.section-01 .slide {
+  max-width: var(--container_width);
+  min-height: 800px;
+  margin: auto;
+  position: relative;
+}
+.section-01 .slide .btn-slide-left,
+.section-01 .slide .btn-slide-right {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 35px);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section-01 .slide .btn-slide-left {
+  left: -100px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_off.svg");
+}
+.section-01 .slide .btn-slide-left:hover {
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_left_on.svg");
+}
+.section-01 .slide .btn-slide-right {
+  right: -100px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_off.svg");
+}
+.section-01 .slide .btn-slide-right:hover {
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/btn_arrow_right_on.svg");
+}
+.section-01 .slide-1 {
+  position: relative;
+}
+.section-01 .slide-1 .text-group {
+  padding-top: 150px;
+  padding-left: 80px;
+}
+.section-01 .slide-1 .text-group .txt-1 {
+  display: flex;
+  margin-bottom: 32px;
+}
+.section-01 .slide-1 .text-group .txt-1 span {
+  font-size: 1.5em;
+  position: relative;
+}
+.section-01 .slide-1 .text-group .txt-1 span::after {
+  content: "";
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.section-01 .slide-1 .text-group .txt-2 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 3.5em;
+  position: relative;
+}
+.section-01 .slide-1 .text-group .txt-2::after {
+  content: "";
+  position: absolute;
+  top: -145px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/ellipse.svg");
+  background-size: contain;
+  z-index: -1;
+}
+.section-01 .slide-1 .text-group .txt-3 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 3.5em;
+  background: linear-gradient(270deg, #4416ce -22.51%, #dd468f 102.64%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.section-01 .slide-1 .text-group .brand-logo {
+  width: 340px;
+  height: 102px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/brand_logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-01 .slide-1 .symbol {
+  position: absolute;
+  top: 150px;
+  right: 80px;
+  z-index: -1;
+}
+.section-01 .slide-1 .symbol .kids-image {
+  width: 680px;
+  height: 600px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-01/slide-01/character03.png"), url("/src/assets/images/hidodo-main-images/section-01/slide-01/character02.png"), url("/src/assets/images/hidodo-main-images/section-01/slide-01/character01.png"), url("/src/assets/images/hidodo-main-images/section-01/slide-01/kid.png");
+  background-size: 170px, 120px, 90px, contain;
+  background-repeat: no-repeat;
+  background-position: bottom 30px left, top 30px right 10px, top 20px left 150px, right;
+}
+
+.section-02 {
+  width: 100%;
+  min-height: 700px;
+  background: #f7f0f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-02 .heading {
+  margin-top: 100px;
+}
+.section-02 .heading .txt-1 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.section-02 .heading .txt-1 span img {
+  max-width: 180px;
+  display: block;
+  padding-bottom: 10px;
+}
+.section-02 .container {
+  height: 595px;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("/src/assets/images/hidodo-main-images/section-02/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.section-02 .container .cards {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+.section-02 .container .cards .fade-card {
+  min-width: 210px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  transition: all 0.2s;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.section-02 .container .cards .fade-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.section-02 .container .cards .fade-card .row-1 {
+  display: grid;
+  gap: 5px;
+}
+.section-02 .container .cards .fade-card .row-1 .txt-1 {
+  color: #707070;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+}
+.section-02 .container .cards .fade-card .row-1 .txt-2 {
+  color: #222222;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.section-02 .container .cards .fade-card .row-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-02 .container .cards .fade-card .row-2 img {
+  width: 72px;
+}
+
+.section-03 {
+  padding: 100px 0;
+}
+.section-03 .heading {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-03 .heading .txt-1 {
+  color: var(--light-purple);
+  margin-right: 80px;
+  position: relative;
+}
+.section-03 .heading .txt-1::after {
+  content: "";
+  position: absolute;
+  left: calc(100% - 8px);
+  bottom: -5px;
+  width: 80px;
+  height: 80px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-03/calendar_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.section-03 .heading .txt-2 {
+  color: var(--light-purple);
+}
+.section-03 .container {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 720px 1fr;
+  gap: 60px;
+}
+.section-03 .container .screenshot-image img {
+  width: 100%;
+}
+.section-03 .container .text-group .quote-marks {
+  width: 34px;
+  height: 25px;
+  background-image: url("/src//assets//images/hidodo-main-images/section-03/quote_marks.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.section-03 .container .text-group .row-1 {
+  margin-bottom: 30px;
+}
+.section-03 .container .text-group .row-1 .txt {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.section-03 .container .text-group .row-2 .txt {
+  font-size: 1.2em;
+  color: var(--gray);
+}
+
+.section-04 {
+  padding: 100px 0;
+  background-color: #fdf0eb;
+  min-height: 700px;
+}
+.section-04 .heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+}
+.section-04 .heading .text-group-1 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+}
+.section-04 .heading .text-group-1 .txt-1 {
+  margin-bottom: 5px;
+}
+.section-04 .heading .text-group-1 .txt-1 span {
+  color: #fc941f;
+}
+.section-04 .heading .text-group-1 .txt-2 {
+  position: relative;
+  display: flex;
+}
+.section-04 .heading .text-group-1 .txt-2::after {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-04/gear_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  left: 140px;
+  bottom: -4px;
+}
+.section-04 .heading .text-group-2 {
+  display: grid;
+  gap: 20px;
+}
+.section-04 .heading .text-group-2 .txt-1 {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.section-04 .heading .text-group-2 .txt-2 {
+  font-size: 1.8em;
+  font-family: "JalnanGothic", sans-serif;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.section-04 .heading .text-group-2 .txt-2 img {
+  margin-bottom: 5px;
+  width: 30px;
+}
+.section-04 .container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 700px 1fr;
+  gap: 10px;
+  overflow: hidden;
+}
+.section-04 .container .screen-shot-left,
+.section-04 .container .screen-shot-right {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+.section-04 .container .screen-shot-left {
+  justify-content: flex-end;
+}
+.section-04 .container .screen-shot-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-04 .container .screen-shot-center .screen-shot-center-container {
+  max-width: 680px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-04 .container .screen-shot-center .screen-shot-center-container img {
+  width: 100%;
+}
+.section-04 .container .screen-shot-center .direction {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-size: 1.5em;
+  font-family: "JalnanGothic", sans-serif;
+  position: relative;
+}
+.section-04 .container .screen-shot-center .direction::after {
+  content: "";
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  left: -60px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-04/arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-04 .container .screen-shot-gray {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+.section-04 .container .screen-shot-gray img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.section-05 {
+  padding: 100px 0;
+}
+.section-05 .heading {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.section-05 .heading span {
+  color: var(--purple);
+}
+.section-05 .container {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+}
+.section-05 .container .tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.section-05 .container .tabs .tab-item {
+  width: calc(100% - 62px);
+  min-height: 60px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--light-gray);
+  border-radius: 20px;
+  color: var(--gray);
+  position: relative;
+}
+.section-05 .container .tabs .tab-item.active {
+  color: #fff;
+  background-color: var(--purple);
+}
+.section-05 .container .tabs .tab-item.active .icon {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.section-05 .container .tabs .tab-item .icon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+.section-05 .container .tabs .tab-item .icon.books {
+  background-image: url("/src/assets/images/hidodo-main-images/section-05/book_icon.png");
+}
+.section-05 .container .tabs .tab-item .icon.coin {
+  background-image: url("/src/assets/images/hidodo-main-images/section-05/coin_icon.png");
+}
+.section-05 .container .tabs .tab-item .icon.paw {
+  background-image: url("/src/assets/images/hidodo-main-images/section-05/paw_icon.png");
+}
+.section-05 .container .tabs .tab-item .txt-1 {
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+.section-05 .container .tabs .tab-item .txt-2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.section-05 .container .tab-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.section-05 .container .tab-contents .contents {
+  width: 100%;
+}
+.section-05 .container .tab-contents .txt {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 1.8em;
+}
+.section-05 .container .tab-contents .txt .highlight {
+  position: relative;
+}
+.section-05 .container .tab-contents .txt .highlight::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-05/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-05 .container .tab-contents .txt .highlight::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 8px;
+  z-index: -1;
+  background-color: #f7ce46;
+}
+
+.section-06 {
+  background-color: var(--light-purple);
+  padding: 100px 0 120px 0;
+  min-height: 800px;
+}
+.section-06 .container {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.section-06 .container .heading {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+  color: #fff;
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+.section-06 .container .heading .txt-1 {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.section-06 .container .heading .txt-2 {
+  font-family: "JalnanGothic", sans-serif;
+}
+.section-06 .container .heading .dodo {
+  width: 215px;
+  height: 260px;
+  background-image: url("/src/assets/images/hidodo-main-images/section-06/dodo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.section-06 .container .card {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  min-height: 380px;
+}
+.section-06 .container .card .card-image {
+  margin-bottom: 30px;
+}
+.section-06 .container .card .card-image img {
+  width: 100%;
+}
+.section-06 .container .card .card-text .txt-1 {
+  color: var(--light-purple);
+  font-size: 1.5em;
+  font-family: "JalnanGothic", sans-serif;
+  margin-bottom: 20px;
+}
+.section-06 .container .card .card-text .txt-2 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.section-06 .container .card .card-text .txt-3 {
+  font-size: 1.2em;
+  color: var(--gray);
+}
+
+.section-07 {
+  background-color: #4416ce;
+  padding: 100px 0;
+}
+.section-07 .heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  margin-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+.section-07 .heading .txt-1 {
+  font-size: 2.8em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.section-07 .heading .txt-2 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+}
+.section-07 .heading .txt-2 .highlight {
+  color: #f7ce46;
+}
+.section-07 .cards {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.section-07 .cards .card {
+  background-color: #fff;
+  border-radius: 20px;
+  min-height: 280px;
+  padding: 60px;
+}
+.section-07 .cards .card .card-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.section-07 .cards .card .card-image img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.section-07 .cards .card .card-text {
+  padding: 0 5px;
+}
+.section-07 .cards .card .card-text .txt-1 {
+  color: var(--purple);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-07 .cards .card .card-text .txt-2 {
+  color: var(--gray);
+  font-size: 1.2em;
+}
+
+.section-08 {
+  background: linear-gradient(180deg, #d7f3e9 0%, #f2f7dc 20.5%, #fff 54.5%);
+  padding: 100px 0;
+  min-height: 600px;
+}
+.section-08 .heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.section-08 .heading .txt-1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+.section-08 .heading .txt-2 {
+  font-family: "JalnanGothic", sans-serif;
+  font-size: 2.8em;
+}
+.section-08 .user-review-container {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.section-08 .user-review-container .row-1,
+.section-08 .user-review-container .row-2 {
+  display: flex;
+  gap: 30px;
+}
+.section-08 .user-review-container .row-1 .tag,
+.section-08 .user-review-container .row-2 .tag {
+  padding: 20px;
+  background-color: #f2f3f6;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 500px;
+}
+.section-08 .user-review-container .row-1 .tag.purple,
+.section-08 .user-review-container .row-2 .tag.purple {
+  background-color: #4416ce;
+  color: #fff;
+}
+.section-08 .user-review-container .row-1 .tag.yellow,
+.section-08 .user-review-container .row-2 .tag.yellow {
+  background-color: #f7ce46;
+  color: #fff;
+}
+.section-08 .user-review-container .row-1 .tag.pink,
+.section-08 .user-review-container .row-2 .tag.pink {
+  background-color: #dd468f;
+  color: #fff;
+}
+.section-08 .user-review-container .row-1 .tag.orange,
+.section-08 .user-review-container .row-2 .tag.orange {
+  background-color: #f19a38;
+  color: #fff;
+}
+.section-08 .user-review-container .row-1 .tag .photo,
+.section-08 .user-review-container .row-2 .tag .photo {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+.section-08 .user-review-container .row-1 .tag .tag-text,
+.section-08 .user-review-container .row-2 .tag .tag-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+
+.app-download-belt {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(270deg, #4416ce -22.51%, #dd468f 102.64%);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  overflow-x: hidden;
+}
+.app-download-belt .slide {
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 60px;
+  animation: marquee 60s linear infinite;
+}
+.app-download-belt .slide .download-message {
+  min-width: 580px;
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.app-download-belt .slide .download-message .pill {
+  display: block;
+  width: 82px;
+  height: 40px;
+  background-image: url("/src/assets/images/icons/pill_click.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.go-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background-image: url("/src/assets/images/icons/chev_up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=hidodo-main.css.map */

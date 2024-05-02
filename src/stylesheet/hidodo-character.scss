@@ -1,0 +1,123 @@
+$jalnan-font: "JalnanGothic", sans-serif;
+
+.heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  .title {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+}
+
+.container-1 {
+  width: 100%;
+  max-width: calc(var(--container_width) + 100px);
+  min-height: 330px;
+  margin: auto;
+  margin-bottom: 120px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #434343;
+  border-radius: 30px;
+  background-image: url("/src/assets/images/hidodo-character-images/character_dodo_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  .image {
+    width: 430px;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+  }
+  .txt-box {
+    .txt-1 {
+      font-size: 3.75em;
+      color: #fff;
+      font-family: $jalnan-font;
+      margin-bottom: 20px;
+      .small {
+        font-size: 0.5em;
+        font-family: sans-serif;
+      }
+    }
+    .txt-2 {
+      color: rgba($color: #fff, $alpha: 0.6);
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.6px;
+    }
+  }
+}
+
+.filter {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 30px;
+  .item {
+    cursor: pointer;
+    color: #a0a0a0;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 25px;
+    &.active {
+      color: #dd468f;
+      border-bottom: 4px solid #dd468f;
+    }
+  }
+}
+
+.container-2 {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+  .card {
+    height: 465px;
+    position: relative;
+    .txt-box {
+      height: calc(365px - 80px);
+      width: calc(100% - 80px);
+      padding: 40px;
+      border-radius: 30px;
+      .txt-1 {
+        font-size: 1.88em;
+        font-family: $jalnan-font;
+        margin-bottom: 20px;
+        .small {
+          font-size: 0.7em;
+          padding: 10px;
+          font-family: sans-serif;
+          font-weight: 500;
+        }
+      }
+      .txt-2 {
+        color: #707070;
+
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.64px;
+      }
+    }
+    .image {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    }
+  }
+}

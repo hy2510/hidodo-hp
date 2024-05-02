@@ -1,0 +1,743 @@
+$jalnan-font: "JalnanGothic", sans-serif;
+
+.heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  .title {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  .tabs {
+    display: flex;
+    gap: 10px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    .tab-item {
+      display: flex;
+      padding: 10px 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1000px;
+      background: #f6f6f6;
+      color: #a0a0a0;
+      font-size: 1.25em;
+      font-weight: 500;
+      &.active {
+        background-color: #222222;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.section-tabs {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  padding-top: 20px;
+  .menu {
+    width: fit-content;
+    display: flex;
+    gap: 40px;
+    height: 50px;
+    border-bottom: 1px solid #a0a0a050;
+    margin: auto;
+    margin-bottom: 50px;
+    .item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: #a0a0a0;
+      font-size: 1.33em;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.96px;
+      &.active {
+        color: #dd468f;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 4px;
+          background-color: #dd468f;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+.section-head {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .txt-1 {
+    color: #222;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #222;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+    }
+  }
+  .txt-2 {
+    color: #222;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
+  }
+  .txt-3 {
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+.section-01 {
+  padding-bottom: 80px;
+  .container-1 {
+    width: 100%;
+    margin-bottom: 20px;
+    .row-1 {
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-01/bg_row_1.png");
+      background-size: cover;
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+      animation: move-bg-1 500s linear infinite;
+      position: relative;
+      .contents {
+        width: fit-content;
+        padding: 10px;
+        padding-right: 20px;
+        background-color: #222;
+        color: #f7ce46;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        &::before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-01/check_icon.svg");
+        }
+      }
+    }
+    .row-2 {
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-01/bg_row_2.png");
+      background-size: cover;
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+      animation: move-bg-2 500s linear infinite;
+      position: relative;
+      .contents {
+        width: fit-content;
+        padding: 10px;
+        padding-right: 20px;
+        background-color: #222;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        position: absolute;
+        top: 35%;
+        right: 30%;
+        &::before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-01/check_icon.svg");
+        }
+      }
+    }
+    .row-3 {
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-01/bg_row_3.png");
+      background-size: cover;
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 120px;
+      animation: move-bg-1 500s linear infinite;
+      position: relative;
+      .contents {
+        width: fit-content;
+        padding: 10px;
+        padding-right: 20px;
+        background-color: #222;
+        color: #f7ce46;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        &::before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-01/check_icon.svg");
+        }
+      }
+    }
+    @keyframes move-bg-1 {
+      0% {
+        background-position: 0 center;
+      }
+      100% {
+        background-position: -10000px center;
+      }
+    }
+    @keyframes move-bg-2 {
+      0% {
+        background-position: 0 center;
+      }
+      100% {
+        background-position: 10000px center;
+      }
+    }
+  }
+  .container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: var(--container_width);
+    margin: auto;
+    .col-1,
+    .col-2 {
+      background-color: #f8f4e6;
+      border-radius: 20px;
+      min-height: 300px;
+      img {
+        display: block;
+        margin: auto;
+      }
+      .image {
+        width: 100%;
+        max-width: 415px;
+        padding: 50px;
+        margin: auto;
+        img {
+          width: calc(100% - 10px);
+        }
+      }
+      .text {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+.section-02 {
+  background-color: #f3efff;
+  padding: 80px 0;
+  .container-1 {
+    position: relative;
+    margin-bottom: 20px;
+    .image {
+      width: 100%;
+      max-width: var(--container_width);
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      .caption {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        color: #4416ce;
+        padding: 20px 30px;
+        padding-left: 15px;
+        font-size: 1.25em;
+        font-weight: 700;
+        background-color: #fff;
+        border-radius: 0 30px 0 30px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .check {
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-02/check_icon.svg");
+          background-repeat: no-repeat;
+          background-size: 24px;
+          background-position: center;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: var(--container_width);
+      }
+    }
+    .bg {
+      width: 100%;
+      height: 360px;
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-02/my_pet_bg.png");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: auto 360px;
+      mix-blend-mode: luminosity;
+      position: absolute;
+      top: calc(50% - 180px);
+      z-index: 1;
+    }
+  }
+  .container-2 {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .col-1,
+    .col-2 {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      .image {
+        height: 234px;
+        text-align: center;
+        margin-bottom: 20px;
+        img {
+          height: 100%;
+        }
+      }
+      .txt {
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .check {
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-02/check_icon.svg");
+          background-repeat: no-repeat;
+          background-size: 24px;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+.section-03 {
+  padding: 80px 0;
+  .container-1 {
+    position: relative;
+    margin-bottom: 20px;
+    .image {
+      width: 100%;
+      max-width: var(--container_width);
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      .caption {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        color: #4416ce;
+        padding: 20px 30px;
+        padding-left: 15px;
+        font-size: 1.25em;
+        font-weight: 700;
+        background-color: #fff;
+        border-radius: 0 30px 0 30px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .check {
+          width: 24px;
+          height: 24px;
+          background-image: url("/src/assets/images/curricoulum-sub-category/section-02/check_icon.svg");
+          background-repeat: no-repeat;
+          background-size: 24px;
+          background-position: center;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: var(--container_width);
+      }
+    }
+    .bg {
+      width: 100%;
+      height: 360px;
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-03/game_thumbnail_bg.png");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: auto 360px;
+      filter: grayscale(1);
+      position: absolute;
+      top: calc(50% - 180px);
+      z-index: 1;
+    }
+  }
+  .container-2 {
+    width: 100%;
+    max-width: var(--container_width);
+    display: grid;
+    grid-template-columns: 1fr 70px 2fr 70px 1.5fr;
+    gap: 10px;
+    min-height: 225px;
+    margin: auto;
+    .col-1 {
+      border: 1px solid #f19a38;
+      border-radius: 20px;
+      color: #f19a38;
+      font-size: 1.63em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .col-2,
+    .col-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .arrow {
+        height: 33.33%;
+        display: flex;
+        img {
+          width: 70px;
+        }
+      }
+    }
+    .col-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      .contents {
+        height: 100%;
+        background-color: #f19a38;
+        color: #fff;
+        font-size: 1.25em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+    }
+    .col-5 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      .contents {
+        height: 100%;
+        font-size: 1.25em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #222;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.section-04 {
+  padding: 80px 0;
+  background-color: #fdf0eb;
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    .col-1,
+    .col-2 {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      .image {
+        width: 100%;
+        max-width: 415px;
+        margin: auto;
+        margin-bottom: 20px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .txt-box {
+        display: grid;
+        gap: 5px;
+        .txt {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 1.25em;
+          &.orange {
+            color: #f19a38;
+            font-weight: 600;
+          }
+          .check {
+            width: 24px;
+            height: 24px;
+            background-image: url("/src/assets/images/curricoulum-sub-category/section-04/check_icon.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-05 {
+  padding: 80px 0;
+  .txt-p {
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &.pink {
+      color: #dd468f;
+      font-weight: 600;
+    }
+    .check {
+      width: 24px;
+      height: 24px;
+      background-image: url("/src/assets/images/curricoulum-sub-category/section-05/check_icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    .row-1 {
+      display: flex;
+      gap: 40px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 2px solid #dd468f;
+      border-radius: 20px;
+      .col-1 {
+        img {
+          width: 100%;
+          max-width: 352px;
+        }
+      }
+      .col-2 {
+        display: grid;
+        gap: 5px;
+        align-content: center;
+      }
+    }
+    .row-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      .col-1,
+      .col-2 {
+        padding: 30px;
+        background-color: #f7f0f9;
+        border-radius: 20px;
+        img {
+          display: block;
+          width: 100%;
+          max-width: 415px;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+        .txt-box {
+          display: grid;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+.section-06 {
+  padding: 80px 0;
+  background-color: #eaf3ff;
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    margin: auto;
+    .row-1 {
+      margin-bottom: 20px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .caption {
+        position: absolute;
+        left: 20px;
+        bottom: 30px;
+        background-color: #fff;
+        padding: 20px 30px;
+        display: grid;
+        gap: 5px;
+        border-radius: 0 30px 0 50px;
+        .txt {
+          font-size: 1.25em;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          &.pink {
+            color: #dd468f;
+            font-weight: 600;
+          }
+          .check {
+            width: 24px;
+            height: 24px;
+            background-image: url("/src/assets/images/curricoulum-sub-category/section-06/check_icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .row-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .col-1 {
+        background-color: #3ac9f1;
+        border-radius: 20px;
+        padding: 30px;
+        color: #fff;
+        .txt-h {
+          font-size: 1.5em;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .txt-p {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 10px;
+          .check {
+            width: 24px;
+            height: 24px;
+            background-image: url("/src/assets/images/curricoulum-sub-category/section-06/check_icon_2.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+      .col-2 {
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        img {
+          width: 100%;
+          max-width: 320px;
+        }
+        .txt-p {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .check {
+            width: 24px;
+            height: 24px;
+            background-image: url("/src/assets/images/curricoulum-sub-category/section-06/check_icon_2.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-07 {
+  padding: 80px 0;
+  .container {
+    width: 100%;
+    max-width: var(--container_width);
+    padding: 40px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    .col-1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border: 2px solid #dd468f;
+      border-radius: 20px;
+      img {
+        width: calc(100% - 160px);
+      }
+      .txt {
+        font-size: 1.5em;
+        color: #dd468f;
+        font-weight: 600;
+        margin-top: 40px;
+      }
+    }
+    .col-2 {
+      display: grid;
+      gap: 20px;
+      .row-1,
+      .row-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f0f9;
+        border-radius: 20px;
+        img {
+          width: calc(100% - 60px);
+        }
+        .txt {
+          font-size: 1.5em;
+          font-weight: 600;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}

@@ -3,16 +3,514 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 하이도도 메인</title>
     <link rel="stylesheet" href="/src/stylesheet/common.css" />
-    <title>HiDODO - 메인</title>
+    <link rel="stylesheet" href="/src/stylesheet/hidodo-main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <global-nav-bar></global-nav-bar>
-    <div class="common-container"></div>
+
+    <!-- 섹션1 : 메인 베너 -->
+    <section class="section-01">
+      <div class="slide">
+        <div class="btn-slide-left"></div>
+        <div class="slide-1">
+          <div class="text-group">
+            <div class="txt-1">
+              <span>국내 No.1 에듀테크 영어독서 프로그램</span>
+            </div>
+            <div class="txt-2">리딩게이트에서 만든</div>
+            <div class="txt-3">AI 키즈영어 프리스쿨 앱</div>
+            <div class="brand-logo"></div>
+          </div>
+          <div class="symbol">
+            <div class="kids-image"></div>
+            <div class="character-1"></div>
+            <div class="character-2"></div>
+            <div class="character-3"></div>
+          </div>
+        </div>
+        <div class="btn-slide-right"></div>
+      </div>
+    </section>
+
+    <!-- 섹션2 : 우리아이 첫 영어는 왜 하이도도여야 할까요? -->
+    <section id="second" class="section-02">
+      <div class="heading">
+        <div class="txt-1">우리 아이 첫 영어는</div>
+        <div class="txt-1">
+          <span>왜</span>
+          <span
+            ><img
+              src="/src/assets/images/hidodo-main-images/section-02/brand_logo.svg" /></span
+          ><span>여야 할까요?</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards">
+          <div class="fade-card">
+            <div class="row-1">
+              <div class="txt-1">데일리 코스 기반</div>
+              <div class="txt-2">커리큘럼</div>
+            </div>
+            <div class="row-2">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-02/calendar_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="fade-card">
+            <div class="row-1">
+              <div class="txt-1">균형잡힌</div>
+              <div class="txt-2">학습 설계</div>
+            </div>
+            <div class="row-2">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-02/gear_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="fade-card">
+            <div class="row-1">
+              <div class="txt-1">어댑티브</div>
+              <div class="txt-2">러닝 시스템</div>
+            </div>
+            <div class="row-2">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-02/book_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="fade-card">
+            <div class="row-1">
+              <div class="txt-1">풍성한</div>
+              <div class="txt-2">보상 시스템</div>
+            </div>
+            <div class="row-2">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-02/coin_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="fade-card">
+            <div class="row-1">
+              <div class="txt-1">리워드 시스템으로</div>
+              <div class="txt-2">펫 육성 기능</div>
+            </div>
+            <div class="row-2">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-02/paw_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션3 : 하루 하루 따라만 오세요 -->
+    <section class="section-03">
+      <div class="heading">
+        <span class="txt-1">하루하루</span><span class="txt-2">따라</span
+        ><span>만 오세요.</span>
+      </div>
+      <div class="container">
+        <div class="screenshot-image">
+          <img
+            src="/src/assets/images/hidodo-main-images/section-03/screenshot_image.png"
+            alt=""
+          />
+        </div>
+        <div class="text-group">
+          <div class="quote-marks"></div>
+          <div class="row-1">
+            <div class="txt">좋은 건 알겠는데,</div>
+            <div class="txt">어떻게 시작해야 할</div>
+            <div class="txt">고민이시라구요?</div>
+          </div>
+          <div class="row-2">
+            <div class="txt">하이도도만의 독보적인 커리큘럼!</div>
+            <div class="txt">
+              데일리 학습 코스만 따라가면 어느 새 영어 실력이 쑥쑥~!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션4 : 지루할 틈이 없어요 -->
+    <section class="section-04">
+      <div class="heading">
+        <div class="text-group-1">
+          <div class="txt-1"><span>지루할 틈</span>이</div>
+          <div class="txt-2">없어요.</div>
+        </div>
+        <div class="text-group-2">
+          <div class="txt-1">
+            65종 이상 다양한 유형의 학습 액티비티, 재미있는 노래와 챈트를
+            포함한<br />
+            670여 편의 재미있는 영어 영상, 유명 동화작가들이 집필한 400여 권의
+            eBook,<br />
+            애니메이션의 캐릭터가 되어보는 AI STUDIO까지
+          </div>
+          <div class="txt-2">
+            매일 달라지는 영어 콘텐츠로 놀면서 학습해요.<img
+              src="/src/assets/images/hidodo-main-images/section-04/pencil_icon.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="screen-shot-left">
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="screen-shot-center">
+          <div class="screen-shot-center-container">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-04/screenshot_1.png"
+              alt=""
+            />
+          </div>
+          <div class="direction">
+            <span class="arrow-icon"></span>고마의 홈베이킹
+          </div>
+        </div>
+        <div class="screen-shot-right">
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+          <div class="screen-shot-gray">
+            <img
+              src="/src//assets/images/hidodo-main-images/section-04/screenshot_3_gray.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션5 : 스스로 학습하는 습관을 길러요 -->
+    <section class="section-05">
+      <div class="heading">스스로 <span>학습하는 습관</span>을 길러요</div>
+      <div class="container">
+        <div class="tabs">
+          <div class="tab-item active">
+            <div class="icon books"></div>
+            <div class="txt-1">일일 학습과 반복학습을 통한</div>
+            <div class="txt-2">학습 몰입도 향상</div>
+          </div>
+          <div class="tab-item">
+            <div class="icon coin"></div>
+            <div class="txt-1">동기부여와 학습 성취감을 느끼게 해주는</div>
+            <div class="txt-2">리워드 시스템</div>
+          </div>
+          <div class="tab-item">
+            <div class="icon paw"></div>
+            <div class="txt-1">직접 수집하고 케어하는</div>
+            <div class="txt-2">나만의 Pet 키우기</div>
+          </div>
+        </div>
+        <div id="tabContents1" class="tab-contents active">
+          <div class="contents">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-05/tab_contents_image_3.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="txt">
+            강요하지 않아도 <span class="highlight">스스로 학습하는 힘</span> 을
+            키울 수 있어요
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션6 : 추가 학습을 위한 자유 학습 콘텐츠 -->
+    <section class="section-06">
+      <div class="container">
+        <div>
+          <div class="heading">
+            <div class="txt-1">추가 학습을 위한</div>
+            <div class="txt-2">자유 학습 콘텐츠</div>
+            <div class="dodo"></div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-06/card_img_01.png"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <div class="txt-1">01</div>
+              <div class="txt-2">Movies</div>
+              <div class="txt-3">
+                캐릭터 애니메이션 시청 영상 녹화 기능 탑재
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-06/card_img_03.png"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <div class="txt-1">03</div>
+              <div class="txt-2">AI Studio</div>
+              <div class="txt-3">
+                애니메이션 캐릭터 대사 더빙 원어민 발음, 억양, 강세 따라하기
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-06/card_img_02.png"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <div class="txt-1">02</div>
+              <div class="txt-2">Books</div>
+              <div class="txt-3">
+                자유로운 이북 리딩과 북퀴즈 학습 이북 녹음 기능 탑재
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="/src/assets/images/hidodo-main-images/section-06/card_img_04.png"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <div class="txt-1">04</div>
+              <div class="txt-2">Activity</div>
+              <div class="txt-3">
+                액티비티 별 복습 가능 반복학습 및 리워드 획득
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션7 : 흥미 유발, 동기 부여를 위한 놀이식 보상 시스템 -->
+    <section class="section-07">
+      <div class="heading">
+        <div class="txt-1">흥미 유발, 동기 부여를 위한</div>
+        <div class="txt-2">
+          <span class="highlight">놀이식 보상</span>시스템
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-07/card_img_01.png"
+              alt=""
+            />
+          </div>
+          <div class="card-text">
+            <div class="txt-1">Game</div>
+            <div class="txt-2">액티비티 반복 학습 및 리워드 획득</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="/src/assets/images/hidodo-main-images/section-07/card_img_02.png"
+              alt=""
+            />
+          </div>
+          <div class="card-text">
+            <div class="txt-1">My Pet</div>
+            <div class="txt-2">코인을 활용하여 획득한 마이펫 육성</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션8 : 하이도도와 만나 본 친구들의 이야기를 들어보세요 -->
+    <section class="section-08">
+      <div class="heading">
+        <div class="txt-1">하이도도와 만나 본</div>
+        <div class="txt-2">친구들의 이야기를 들어보세요.</div>
+      </div>
+      <div class="user-review-container">
+        <div class="row-1">
+          <div class="tag orange">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag purple">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag yellow">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag pink">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="tag gray">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag purple">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag yellow">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+          <div class="tag pink">
+            <div class="photo"></div>
+            <div class="tag-text">
+              <div class="txt-1">후기 내용이 들어가는 곳입니다.</div>
+              <div class="txt-2">*** 어머님</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="go-to-top"></div>
+
+    <!-- 벨트 : 앱 다운로드 -->
+    <div class="app-download-belt">
+      <div class="slide">
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+        <div class="download-message">
+          하이도도 앱 다운로드 • Download Hidodo app<span class="pill"></span>
+        </div>
+      </div>
+    </div>
     <common-footer></common-footer>
 
     <!-- 콤포넌트 -->
     <script src="/src/components/nav-bar.js"></script>
     <script src="/src/components/footer.js"></script>
+    <script>
+      // 섹션2. 카드가 순서대로 나타나는 효과
+      const element = document.getElementById("second");
+      window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < scrollY) {
+          const cards = document.querySelectorAll(".fade-card");
+
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.className = "fade-card active";
+            }, index * 200);
+          });
+        }
+      });
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

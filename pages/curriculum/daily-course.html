@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 커리큘럼 - 데일리 코스</title>
+    <link rel="stylesheet" href="/src/stylesheet/common.css" />
+    <link rel="stylesheet" href="/src/stylesheet/curriculum-daily-course.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+
+    <div class="heading">
+      <div class="title">커리큘럼</div>
+      <div class="tabs">
+        <div class="tab-item">개요</div>
+        <div class="tab-item active">데일리 코스</div>
+        <div class="tab-item">서브 카테고리</div>
+      </div>
+    </div>
+
+    <!-- 페이지 베너 -->
+    <div class="banner">
+      <div class="banner-contents">
+        <div class="txt">Daily Lesson (본 학습)</div>
+        <div class="container">
+          <div class="col-1">
+            <img
+              src="/src/assets/images/curricoulum-daily-course/daily_course_sample.png"
+              alt=""
+            />
+          </div>
+          <div class="col-2">
+            <div class="col-2-txt">
+              학습자가 하루에 해야 하는 학습 콘텐츠 및 학습량을
+              <b>Daily Lesson</b>으로 제공
+            </div>
+            <div class="col-2-txt">
+              <span class="highlight">총 4단계의 코스로 구성</span>
+            </div>
+            <div class="col-2-txt">
+              <span class="highlight"
+                >코스는 Stage로 나눠지며, 각 Stage당 20~24일 과정의 데일리
+                레슨들로 구성</span
+              ><br />
+              <b> (총 24개월 과정) </b>
+            </div>
+            <div class="col-2-txt">
+              데일리 레슨은 일반 학습과 복습 학습을 구성되어 반복 학습 유도
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 콘텐츠 -->
+    <div class="contents">
+      <div class="row-1">
+        <div class="txt">Daily Lesson 예시</div>
+        <div class="chart">
+          <img
+            src="/src/assets/images/curricoulum-daily-course/daily-lesson-chart.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="row-2-section-1">
+          <div class="txt-1"><span class="num">1</span>일반 학습</div>
+          <div class="txt-2">
+            DAY 01) 챈트 영상 <b>1편</b>, 액티비티 <b>4개</b>, 애니메이션
+            <b>1편</b>(Book <b>1편</b>)
+          </div>
+          <div class="container">
+            <div class="col-1">
+              <img
+                src="/src/assets/images/curricoulum-daily-course/daily_course_sample_2.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <div class="list-item active">
+                <span class="step">STEP 01</span>알파벳 챈트 영상
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 02</span>알파벳 따라 쓰기
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 03</span>대소문자 구별
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 04</span>대소문자 구별
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 05</span>대소문자 구별
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 06</span>대소문자 구별
+              </div>
+              <div class="arrow"></div>
+              <div class="list-item yellow">
+                <span class="coin"></span>도도 코인 리워드
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="row-2-section-2">
+          <div class="txt-1"><span class="num">2</span>복습 학습</div>
+          <div class="txt-2">
+            DAY 01) 챈트 영상 <b>1편</b>, 액티비티 <b>4개</b>, 애니메이션
+            <b>1편</b>(Book <b>1편</b>)
+          </div>
+          <div class="container">
+            <div class="col-1">
+              <img
+                src="/src/assets/images/curricoulum-daily-course/daily_course_sample_2.png"
+                alt=""
+              />
+            </div>
+            <div class="col-2">
+              <div class="list-item active">
+                <span class="step">STEP 01</span>알파벳 챈트 영상
+              </div>
+              <div class="list-item-group">
+                <div class="list-item">
+                  <span class="step">STEP 02</span>알파벳 따라 쓰기
+                </div>
+                <div class="list-item">
+                  <span class="step">STEP 03</span>대소문자 구별
+                </div>
+              </div>
+              <div class="info">
+                <b>어댑티브 러닝 학습</b> 아이의 집중도와 정답률을 분석해 보충이
+                필요한 액티비티 제공
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 04</span>대소문자 구별
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 05</span>대소문자 구별
+              </div>
+              <div class="list-item">
+                <span class="step">STEP 06</span>대소문자 구별
+              </div>
+              <div class="arrow"></div>
+              <div class="list-item yellow">
+                <span class="coin"></span>도도 코인 리워드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+
+    <!-- 콤포넌트 -->
+    <script src="/src/components/nav-bar.js"></script>
+    <script src="/src/components/footer.js"></script>
+  </body>
+</html>

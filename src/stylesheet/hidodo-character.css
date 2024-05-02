@@ -1,0 +1,119 @@
+.heading {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.heading .title {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.container-1 {
+  width: 100%;
+  max-width: calc(var(--container_width) + 100px);
+  min-height: 330px;
+  margin: auto;
+  margin-bottom: 120px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #434343;
+  border-radius: 30px;
+  background-image: url("/src/assets/images/hidodo-character-images/character_dodo_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container-1 .image {
+  width: 430px;
+  position: relative;
+}
+.container-1 .image img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.container-1 .txt-box .txt-1 {
+  font-size: 3.75em;
+  color: #fff;
+  font-family: "JalnanGothic", sans-serif;
+  margin-bottom: 20px;
+}
+.container-1 .txt-box .txt-1 .small {
+  font-size: 0.5em;
+  font-family: sans-serif;
+}
+.container-1 .txt-box .txt-2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.6px;
+}
+
+.filter {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 30px;
+}
+.filter .item {
+  cursor: pointer;
+  color: #a0a0a0;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+.filter .item.active {
+  color: #dd468f;
+  border-bottom: 4px solid #dd468f;
+}
+
+.container-2 {
+  width: 100%;
+  max-width: var(--container_width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+}
+.container-2 .card {
+  height: 465px;
+  position: relative;
+}
+.container-2 .card .txt-box {
+  height: 285px;
+  width: calc(100% - 80px);
+  padding: 40px;
+  border-radius: 30px;
+}
+.container-2 .card .txt-box .txt-1 {
+  font-size: 1.88em;
+  font-family: "JalnanGothic", sans-serif;
+  margin-bottom: 20px;
+}
+.container-2 .card .txt-box .txt-1 .small {
+  font-size: 0.7em;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.container-2 .card .txt-box .txt-2 {
+  color: #707070;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.64px;
+}
+.container-2 .card .image {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}/*# sourceMappingURL=hidodo-character.css.map */
