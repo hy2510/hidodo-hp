@@ -23,6 +23,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none !important;
+  color: #222;
+}
+
 .global-nav-bar {
   width: 100%;
   height: 86px;
@@ -72,9 +77,13 @@ body {
 .global-nav-bar .gnb-container .group2 .gnb-item.active {
   color: #dd468f;
 }
+.global-nav-bar .gnb-container .group2 .gnb-item.active a {
+  color: #dd468f;
+}
 .global-nav-bar .gnb-container .group2 .gnb-item:hover .menu {
   position: absolute;
   top: 100%;
+  z-index: 1;
   background-color: #dd468f;
   padding: 20px;
   min-width: 120px;
@@ -84,11 +93,18 @@ body {
   gap: 10px;
 }
 .global-nav-bar .gnb-container .group2 .gnb-item:hover .menu .menu-item {
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9em;
   font-weight: 500;
 }
+.global-nav-bar .gnb-container .group2 .gnb-item:hover .menu .menu-item a {
+  color: rgba(255, 255, 255, 0.5);
+}
 .global-nav-bar .gnb-container .group2 .gnb-item:hover .menu .menu-item.active {
+  color: white;
+}
+.global-nav-bar .gnb-container .group2 .gnb-item:hover .menu .menu-item.active a {
   color: white;
 }
 .global-nav-bar .gnb-container .group2 .gnb-item .menu {

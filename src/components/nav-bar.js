@@ -10,27 +10,30 @@ class GlobalNavBar extends HTMLElement {
         </div>
         <div class="group2">
           <div class="gnb-item active">
-            <span>하이도도</span>
+            <a href="">하이도도</a>
             <div class="menu">
-              <div class="menu-item active">하이도도</div>
-              <div class="menu-item">캐릭터 소개</div>
-              <div class="menu-item">이용후기</div>
+              <div class="menu-item active"><a href="">하이도도</a></div>
+              <div class="menu-item"><a href="">캐릭터 소개</a></div>
+              <div class="menu-item"><a href="">이용후기</a></div>
             </div>
           </div>
           <div class="gnb-item">
-            <span>커리큘럼</span>
+            <a href="">커리큘럼</a>
             <div class="menu">
-              <div class="menu-item active">개요</div>
-              <div class="menu-item">데일리 코스</div>
-              <div class="menu-item">서브 카테고리</div>
+              <div class="menu-item active"><a href="">개요</a></div>
+              <div class="menu-item"><a href="">데일리 코스</a></div>
+              <div class="menu-item"><a href="">서브 카테고리</a></div>
             </div>
           </div>
           <div class="gnb-item">
-            <span>멤버십</span>
+            <a href="">멤버십</a>
           </div>
         </div>
         <div class="group3">
-          <a href="" id="logIn" class="link dark">로그인 / 회원가입</a>
+          <span>
+            <a href="" id="logIn" class="link dark">로그인 /</a>
+            <a href="" id="SignUp" class="link dark">회원가입</a>
+          </span>
           <a href="" id="logOut" class="link dark d-none">로그아웃</a>
           <button class="btn rounded purple">앱 다운로드</button>
         </div>

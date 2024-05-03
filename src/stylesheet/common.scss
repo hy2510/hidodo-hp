@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none !important;
+  color: #222;
+}
+
 $container_width: var(--container_width);
 $gnb_height: 86px;
 $common_footer_height: 220px;
@@ -73,11 +78,15 @@ $common_footer_height: 220px;
         padding: 10px 0;
         &.active {
           color: #dd468f;
+          a {
+            color: #dd468f;
+          }
         }
         &:hover {
           .menu {
             position: absolute;
             top: 100%;
+            z-index: 1;
             background-color: #dd468f;
             padding: 20px;
             min-width: 120px;
@@ -86,11 +95,18 @@ $common_footer_height: 220px;
             flex-direction: column;
             gap: 10px;
             .menu-item {
+              cursor: pointer;
               color: rgba($color: #fff, $alpha: 0.5);
               font-size: 0.9em;
               font-weight: 500;
+              a {
+                color: rgba($color: #fff, $alpha: 0.5);
+              }
               &.active {
                 color: rgba($color: #fff, $alpha: 1);
+                a {
+                  color: rgba($color: #fff, $alpha: 1);
+                }
               }
             }
           }
